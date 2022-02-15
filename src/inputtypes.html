@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types</title>
+</head>
+
+<body>
+    <header>
+        <h1>Input types</h1>
+
+    </header>
+    <div>
+        <form>
+            <div>
+                <label>Name</label>
+                <input autofocus="on" Name=" Login username" required minilength="5" maxlength="10" size="10">
+            </div>
+
+            <div>
+                <label>Password</label>
+                <input id="password" type="password" pattern="[A-Za-z" ]*[0-9][A-Za-z]*" minlength="8"
+                    title="password must begin with letter and contain at least one digit ">
+            </div>
+
+            <div>
+                <label>Email id</label>
+                <input title="Enter email" id="email" type="email" </div>
+
+                <div>
+                    <label>Photo</label>
+                    <input placeholder="file" id="file" type="file" accept="audio/*,video/*,image/*" />
+                </div>
+
+                <div>
+                    <label>DOB</label>
+                    <input title="enter your date of birth" id="date" type="date" />
+                    <input title="enter your date and time" id="datetime-local" type="datetime-local" />
+                    <input title="enter time here" id="time" type="time" />
+                    <input title="enter the week of the year" id="week" type="week" />
+                    <input title="status" id="color" type="color" />
+                </div>
+
+                <div>
+                    <label> Years of experience </label>
+                    <input title="status" id="year" type="number" min="1" max="40" maxlength="3" />
+                </div>
+                <div>
+                    <label> Range </label>
+                    <input title="range" id="range" type="range" step=10 />
+                </div>
+                <div>
+                    <label> Skills </label>
+                    <input id="search" type="search" placeholder="Search your skill" />
+                </div>
+                <div>
+                    <label> Telephone </label>
+                    <input type="tel" name="telid" required pattern="[0-9]{3}-[0-9]{3}" placeholder="123-456-789" />
+                </div>
+                <div>
+                    <label>hobbies</label>
+                    <input type="checkbox" name="music">music</input>
+                    <input title="hobby type=" number" type="checkbox" unchecked="true name=" items"
+                        value="Reading">Bike riding</input>
+                    <input title="hobby type=" number" type="checkbox" unchecked="true name=" items"
+                        value="Reading">Listening music</input>
+                </div>
+                <label>hidden content</label>
+                <input id="hid" type="hidden" />
+                <div>
+                    <div>
+                        <label>URL</label>
+                        <input title="enter url" id="url" type="url" />
+                    </div>
+                    <div>
+                        <p></p>
+                        <labels>comments</labels>
+                        <textarea title="Enter your comment here" id="comment" cols="50 rows=" 5" />comments</textarea>
+                    </div>
+                    <div>
+                        <label>Select course</label>
+                        <select name="course list" title="select a course">
+                            <option selected>---Select a value---</option>
+                            <option>HTML</option>
+                            <option> java </option>
+                            <option selected> Bootstrap</option>
+                            <option> python</option>
+                            <optgroup label="database">
+                                <option>SQL</option>
+                                <option>Oracle</option>
+                                <option>MySQl</option>
+                    </div>
+                    <div>
+                        <input type="submit" />
+                        <input type="reset" value="reset" />
+                        <input type="image" alt="close" name="close" width="25" height="25"
+                            src="../../images/close.jpg">
+                    </div>
+                    <input type="submit">
+                </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
