@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local storage</title>
+</head>
+
+<body onload="lbltext.innerText = localStorage.getItem('notes')">
+  <textarea style="width: 100%;" id="t" placeholder="write it down" spellcheck="true"
+    oninput='localStorage.setItem("notes",this.value)'></textarea>
+  <label id="lbltext"></label>
+</body>
+
+</html>
