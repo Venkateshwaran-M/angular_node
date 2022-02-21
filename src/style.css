@@ -1,0 +1,91 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;  
+   cursor: pointer;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: blue;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+
+}
+
+nav li{
+    display: inline-block;
+    margin:10px 20px;
+    font-weight: 600;
+}
+.main{
+    width: 100%;
+    display: flex;
+}
+.content{
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+    color: white;
+    animation: content 2s ease-in-out;
+    
+}
+@keyframes content{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+}
+
+.content h1{
+    font-size: 40px;
+    margin-bottom: 3% ;
+    font-family: sans-serif;
+}
+
+.content h2{
+    font-size: 25px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span{
+    color: red;
+}
+.content p{
+    font-size: 15px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+button{
+    padding: 10px 20px;
+    background: transparent;
+    font-size: 17px;
+    color: white;
+    border-radius: 10px;
+}
+button:hover{
+    background: red;
+
+}
+
+.image{
+    width: 50%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+.content h4{
+    font-size: 15px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-stretch: expanded;
+
+
+}
