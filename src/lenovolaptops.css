@@ -1,8 +1,8 @@
 body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
-  padding:0;
-  margin:0;
-  background-color: #f7b809;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(212, 218, 219);
 
   
 }
@@ -11,7 +11,7 @@ body{
 .container{
   width:80%;
   margin:auto;
-  overflow:hidden;
+ /* overflow:hidden;*/
 }
 
 ul{
@@ -38,15 +38,15 @@ ul{
 
 /* Header **/
 header{
-  background: blue;
+  background: silver;
   color: rgb(248, 242, 242);
   padding-top: 30px;
   min-height:70px;
-  border-bottom:#0f0601 3px solid;
+  border-bottom:#0f0600 3px solid;
 }
 
 header a{
-  color:#fa0202;
+  color:#faf5f5;
   text-decoration:none;
   text-transform: uppercase;
   font-size:16px;
@@ -71,6 +71,7 @@ header nav{
   float:right;
   margin-top:10px;
   animation: header 2s ease-in-out;
+  color: rgb(252, 252, 253);
   
 }
 @keyframes header{
@@ -82,7 +83,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-  color: rgb(247, 1, 1);
+  color: red;
   font-weight:bold;
   animation: content 2s ease-in-out;
   
@@ -97,16 +98,18 @@ header .highlight, header .current a{
 }
 
 header a:hover{
-  color:#f2f1f5;
+  color:blue;
   font-weight:bold;
 }
 
 /* Showcase */
 #showcase{
-  min-height:400px;
+  min-height:470px;
   background-image:"https://c.tenor.com/DO5IDfOiJ00AAAAC/lenovo-pc.gif";
   text-align:center;
   color:#fdfdfd;
+  border-bottom: #0f0600;
+  
 }
 
 #showcase h1{
@@ -123,20 +126,22 @@ header a:hover{
 #newsletter{
   padding:15px;
   color:#f7f309;
-  background-color: navy;
+ /* background-color: cyan;*/
   animation: content 2s ease-in-out;
   
 }
 @keyframes content{
   0%{
       opacity: 0;
-      transform: translateX(50%);
+      transform: translateX(-50%);
   }
 
 }
 
 #newsletter h1{
   float:left;
+  color:#0f0600;
+  margin-bottom: 10px;
 }
 
 #newsletter form {
@@ -160,7 +165,8 @@ header a:hover{
   text-align: center;
   width:100%;
   padding:10px;
-  animation: content 2s ease-in-out;
+}
+ /* animation: content 2s ease-in-out;
   
 }
 @keyframes content{
@@ -169,10 +175,14 @@ header a:hover{
       transform: translateX(-50%);
   }
 
-}
+}*/
 
 #boxes .box img{
-  width:90px;
+  width: 720px;
+  height: 720px;
+  padding: 10px;
+  margin-top: 20px;
+  justify-content: center;
 }
 
 /* Sidebar */
@@ -204,7 +214,7 @@ ul#services li{
 
 footer{
   padding:20px;
-  margin-top:20px;
+  /*margin-top:20px;*/
   color:#ffffff;
   background-color: black;
   text-align: center;
@@ -235,12 +245,13 @@ footer{
 
   #newsletter button, .quote button{
     display:block;
-    width:100%;
+    width:80%;
+
   }
 
   #newsletter form input[type="search"], .quote input, .quote textarea{
     width:100%;
-    margin-bottom:5px;
+    margin-bottom:10px;
   }
 }
 
@@ -267,7 +278,8 @@ p{
 h1{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 600px;
-  color: #f6f8f7;
+  color:white;
+  text-shadow: #0f0600;
 }
 h2{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -282,3 +294,20 @@ h3{
 img{
   width: 1280px;
 }
+p{
+  color: black;
+}
+
+p1{
+  font-size: medium;
+  font-weight: bold;
+}
+
+h3{
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p2{
+  color:white;
+}
+
