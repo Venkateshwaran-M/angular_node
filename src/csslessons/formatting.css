@@ -1,0 +1,23 @@
+div{
+    background-color: green;
+    text-align:right;
+
+}
+p{
+    background-color: blue;
+    color:white;
+    font-size: 25px;
+    text-align: center;
+}
+
+div p{
+    display:inline;
+    background-color: green;
+    color:white;
+    font-size:25px;
+    text-align: right;
+}
+h1{
+    font-family: 'montserrat' , sans-serif;
+    font-weight: bold;
+}

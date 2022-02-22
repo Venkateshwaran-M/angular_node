@@ -1,0 +1,31 @@
+div{
+    width: 500px;
+    height: 500px;
+    border:5px;
+    color: aquamarine;
+    background-image: url(../../images/abdul.jpg);
+
+    margin: 100px auto;
+}
+
+#div1{
+    width: 500px;
+    height: 500px;
+    border:5px solid red;
+    color: aquamarine;
+    background-image: url(../../images/flag.jpg);
+    margin: 100px auto;
+    background-size: 200px;
+}
+
+#div2{
+    width: 500px;
+    height: 500px;
+    border:5px solid red;
+    color: aquamarine;
+    background-image: url(../../images/abdul.jpg);
+    margin: 100px auto;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
