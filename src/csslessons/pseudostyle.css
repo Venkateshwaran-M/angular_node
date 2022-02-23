@@ -1,11 +1,11 @@
-/*a:link{
+a:link{
     font-size: 35px;
     text-decoration: none;
     color:goldenrod;
 }
 a:visited
 {
-    color:aquamarine;
+    color:orange;
 }
 a:hover
 {
@@ -13,11 +13,11 @@ a:hover
 }
 a:active
 {
-
+ color: red;
 }
 .dropdown-content {
     display:none;
-}*/
+}
 h1::first-letter{
     font-size: 70px;
     font-style: bold;

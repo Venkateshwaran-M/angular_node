@@ -6,8 +6,9 @@ h2{
 
 h3{
     background-color: blue;
-    color:white
+    
 }
+/*grouping of elements */
 h1,h3{
     color:white;
 }
@@ -18,9 +19,9 @@ ul li{
 ul>li{
     color: blue;
 }
-/*li{
+li{
     color: green;
-}*/
+}
 /*selecting class element*/
 .item{
     color:pink;
