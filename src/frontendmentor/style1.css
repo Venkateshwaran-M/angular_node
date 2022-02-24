@@ -1,0 +1,178 @@
+html, body{
+    overflow-x: hidden;
+}
+body {
+    min-height: 100vh;
+    background-color: green;
+    background-image: url("../../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: ;
+}    
+:root{
+    --main-font: "Red Hat Display" ,sans-serif;
+    --background-color:hsl(225,100%,94%);
+    --container-box-shadow: -2px 10px 24px -11px rgba(0,0,0,0.62);
+    --btn-box-shadow: 5px 10px 20px hsl(245,75%,90%);
+    --dark-blue: hsl(223,47%,23%);
+    --desaturated-blue: hsl(224,23%,55%);
+    --very-pale-blue:hsl(225,100%,98%);
+    --bright-blue: hsl(245,75%,52%);
+    --light-grey: rgb(255,255,255);
+    --white: rgb(255,255,255);
+    --red: red;
+}
+/*The universal selector is the * in css selects all elements. Applies to all */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+overflow-x
+-----
+The overflow-x CSS properly sets what shows when content overflows a block-level element
+This may be nothing, a scroll bar, or the overflow content.
+*/
+html, body {
+    overflow-x: hidden;
+
+}
+body{
+    min-height:10vh;
+    background-color: var(--background-color);
+    background-image:url(../../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow-y: scroll;
+
+}
+
+.order-center-container{
+    position: relative;
+    width: 90%;
+    max-width: 28.3rem;
+    height:100vh;
+    max-height: 44rem;
+    margin:0 auto;
+    margin-top:100px;
+    margin-bottom:100px;
+    justify-content: center;
+    align-content:center;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    overflow: hidden;
+    -webkit-box-shadow: var(--container-box-shadow);
+    -moz-box-shadow: var(--container-box-shadow);
+    box-shadow: var(--container-box-shadow);
+}
+.order-header-image{
+width:100%;
+height:100%;
+min-height:14rem;
+background-image: url(../../images/illustration-hero.svg);
+background-position: center center;
+background-size: cover;
+border-radius: 25px 25px 0 0;
+overflow:hidden;
+}
+.order-title-container{
+width:80%;
+height: 100%;
+max-height: 14rem;
+font-family: var(--main-font);
+color: var(--dark-blue);
+text-align: center;
+margin:0 auto;
+margin-top: 3rem;
+}
+.order-title-container h1{
+font-size: 1.5rem;
+letter-spacing: 2px;
+font-weight: 900;
+}
+.order-title-container p{
+    font-weight: lighter;
+    color: var(--desaturated-blue);
+    margin-top:1.2rem;
+    line-height: 25px;
+
+}
+.order-pricing-container{
+    background-color: var(--very-pale-blue);
+    font-family: var(--main-font);
+    width: 70%;
+    display:inline-flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    justify-content: space-evenly;
+    font-size:1rem;
+    font-weight: 900;
+    gap: 1rem;
+}
+.music.img{
+    width:3.5rem;
+    height:3rem;
+    background-image:url("../../images/icon-music.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.order-pricing-continer .order-annual-plan{
+    color: var(--dark-blue);
+    margin-bottom:1rem;
+
+}
+.order-pricing-continer p{
+    color: hsl(224,23%,55%);
+    line-height: 10px;
+}
+
+.btn-change{
+    background-color: transparent;
+    color: var(--bright-blue);
+    font-weight:900;
+    font-size: 1rem;
+}
+
+.btn-payment{
+    background-color: var(--bright-blue);
+    border-radius:15px;
+    font-family: var(--main-font);
+    width:80%;
+    min-width: 80%;
+    padding:1rem;
+    margin-top:2rem;
+    border:transparent;
+    box-shadow:var(--btn-box-shadow);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.btn-payment:hover,
+.btn-cancel:hover,
+.btn-change:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    text-decoration: none;
+}
+.btn-cancel{
+    background-color: transparent;
+    color: blue;
+    border:none;
+    margin-bottom: 10rem;
+    font-weight:700;
+    margin-top:2rem;
+    text-transform:capitalize;
+    color: var(--light-grey);
+    text-decoration: none;
+    font-size: 1rem;
+
+}
+.btn-cancel:hover{
+    color:var(--red);
+}
