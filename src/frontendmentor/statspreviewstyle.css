@@ -128,30 +128,3 @@ body{
     }
 }
 
-/* .link {
-    position: fixed;
-    background-color: #D12322;
-    padding: 23px 40px;
-    right: -95px;
-    border-radius: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    transform: rotate(-90deg);
-    font-size: 18px;
-    font-weight: 500;
-    color: #FFF;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: all .1s ease-in-out;
-}
-
-.link i {
-    padding-left: 7px;
-}
-
-.link:hover {
-    text-decoration: underline;
-    background-color: white;
-    color: #D12322;
-
-} */
