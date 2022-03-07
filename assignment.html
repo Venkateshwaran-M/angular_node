@@ -5,71 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Assignments </title>
+    <title> Assignment </title>
     <style>
         body {
-            background-image: url(https://thumbs.dreamstime.com/b/assignment-sign-board-beautiful-green-background-214256672.jpg);
-            background-repeat: no-repeat;
-            background-size: 1800px 720px;
-            align-items: center;
+            background-image: url(https://921384.smushcdn.com/2526230/wp-content/uploads/2018/04/colorful-background.jpg?lossy=1&strip=1&webp=1);
             text-align: center;
+            margin-top: 250px;
+            background-size: cover;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
         }
 
-        .grid-items:after {
-            /* display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            background-color: orangered;
-            padding: 10px; */
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .grid-item {
-            /* background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            font-size: 15px;
-            text-align: center;
-            text-transform: none; */
-            float: left;
-            width: 33.33%;
-            padding: 10px;
-            height: 300px;
-            grid-gap: 50px;
-
+        header {
+            font-size: larger;
+            font-weight: 500;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         a:hover {
-            color: brown;
+            color: chocolate;
+        }
+
+        a {
+            color: green;
+        }
+
+        .grid-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: yellow;
+            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 1px;
+            scrollbar-shadow-color: blue;
+
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            border-radius: 25px;
+            padding: 20px;
+            font-size: 15px;
+            text-align: center;
+            text-transform: none;
         }
     </style>
 </head>
 
 <body>
-    <h3> Assignment </h3>
-
+    <header>
+        Assignments
+    </header>
     <div class="grid-items">
-        <div class="assignment">
-        </div>
-        <div class="grid-item" style="background-image: url(./images/abdul.jpg); background-repeat: no-repeat;">
-
-            <p> <a href="./src/project1.html">1.TRIBUTE PAGE </a></p>
-        </div>
-        <div class="grid-item"
-            style="background-image: url(https://www.voxco.com/wp-content/uploads/2021/04/students-feedback-survey-cvr.jpg); background-repeat: no-repeat; background-size: contain;">
-
-            <p> <a href="./src/project2.html"> 2.SURVEY REPORT </a></p>
+        <div class="grid-item">
+            <p><a href="./src/project1.html">1.Tribute Page</a> </p>
+            <p>
+                Description:
+                A page that describes about Dr. APJ Abdul kalam
+            </p>
 
         </div>
-        <div class="grid-item"
-            style="background-image: url(./images/lap1.png); background-repeat: no-repeat; background-size: contain;">
-
-
-            <h2> PRODUCT LANDING PAGE </h2>
-
-
-            <a href="./src/lenovolaptops.html">LENOVO LAPTOPS</a>
+        <div class="grid-item">
+            <p><a href="./src/project2.html">2.Survey Report</a> </p>
+            <p>
+                Description:
+                A page that fills details of a person whether he is affected by Covid or not
+            </p>
+        </div>
+        <div class="grid-item">
+            <p><a href="./src/lenovolaptops.html">3.Lenovo Lapops</a> </p>
+            <p>
+                Description:
+                A product landing page that reveals the full details about a particular product
+            </p>
         </div>
     </div>
 </body>
