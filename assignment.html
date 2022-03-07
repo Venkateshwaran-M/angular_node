@@ -8,10 +8,36 @@
     <title> Assignments </title>
     <style>
         body {
-            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210510/pngtree-school-assignments-education-colorful-cool-image_700456.jpg);
+            background-image: url(https://thumbs.dreamstime.com/b/assignment-sign-board-beautiful-green-background-214256672.jpg);
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: 1800px 720px;
             align-items: center;
+            text-align: center;
+        }
+
+        .grid-items:after {
+            /* display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: orangered;
+            padding: 10px; */
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .grid-item {
+            /* background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 15px;
+            text-align: center;
+            text-transform: none; */
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 300px;
+            grid-gap: 50px;
+
         }
 
         a:hover {
@@ -21,25 +47,31 @@
 </head>
 
 <body>
-    <div class="assignment">
-        <h3> Assignment </h3>
-        <hr>
+    <h3> Assignment </h3>
 
-        <p> <a href="./src/project1.html">1.TRIBUTE PAGE </a></p>
+    <div class="grid-items">
+        <div class="assignment">
+        </div>
+        <div class="grid-item" style="background-image: url(./images/abdul.jpg); background-repeat: no-repeat;">
+
+            <p> <a href="./src/project1.html">1.TRIBUTE PAGE </a></p>
+        </div>
+        <div class="grid-item"
+            style="background-image: url(https://www.voxco.com/wp-content/uploads/2021/04/students-feedback-survey-cvr.jpg); background-repeat: no-repeat; background-size: contain;">
+
+            <p> <a href="./src/project2.html"> 2.SURVEY REPORT </a></p>
+
+        </div>
+        <div class="grid-item"
+            style="background-image: url(./images/lap1.png); background-repeat: no-repeat; background-size: contain;">
 
 
-        <p> <a href="./src/project2.html"> 2.SURVEY REPORT </a></p>
-        <hr>
+            <h2> PRODUCT LANDING PAGE </h2>
+
+
+            <a href="./src/lenovolaptops.html">LENOVO LAPTOPS</a>
+        </div>
     </div>
-
-    <h2> PRODUCT LANDING PAGE </h2>
-
-
-    <a href="./src/lenovolaptops.html">LENOVO LAPTOPS</a>
-
-
-
-    <hr>
 </body>
 
 </html>
