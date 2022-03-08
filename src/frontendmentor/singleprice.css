@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+#space {
+    padding-top: 50px;
+}
+
+body {   
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+}
+
+#main {
+    margin: auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+p {
+    line-height: 22px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+#section1 {
+    background-color: white;
+    padding: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: hsl(218, 22%, 67%);
+    
+    
+}
+
+#section1 h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+#section1 h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+
+.flex {
+    display: flex;
+    
+}
+
+
+
+#section2 {
+    width: 50%;
+    display: block;
+    float: left;
+    padding: 30px;
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+    color: white;
+}
+
+strong {
+    font-size: 35px;
+    color: white;
+    padding-right: 10px;
+    line-height: 1em;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    padding: 10px;
+    width: 75%;
+    border-radius: 4px;
+    font-weight: bold; 
+    border: none;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#section2 p.one {
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+#section2 p.two {
+    color: hsla(0, 0%, 100%, 0.8);
+}
+
+#section3 {
+    width: 50%;
+    float: left;
+    display: block;
+    padding: 30px;
+    background-color: hsl(179, 47.2%, 51.8%);
+    border-bottom-right-radius: 10px;
+    color: white;
+    
+}
+
+#section3 p {
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+
+@media only screen and (max-width: 500px) {
+    #main {
+        width: 90%;
+    }
+    
+    #section2 {
+        width: 100%;
+        float: none;
+        border-bottom-left-radius: 0px;
+    }
+    
+    #section3 {
+        width: 100%;
+        float: none;
+        border-bottom-left-radius: 10px;
+    }
+    .flex {
+        display: inline;
+    }
+    
+    button {
+       width: 100%; 
+    }
+}
