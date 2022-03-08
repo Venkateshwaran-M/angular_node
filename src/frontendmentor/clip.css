@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    max-width: 1440px;
+    margin:auto;
+    font-family:  sans-serif;
+    color: #9FABB2;
+}
+h1,h2,h3,h4,h5,h6{
+    color:#000000;
+}
+header{
+    background-image: url(../../images/bg-header-desktop.png), 
+    linear-gradient(0deg, rgba(255,255,255,0.5324511201839882) 21%, rgba(159,171,178,0.8125814133435973) 100%);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 6em 0;
+}
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+.small-container{
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+main .showcase{
+    text-align: center;
+    margin-top: -40px;
+    padding-bottom: 2em;
+}
+.para h2{
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+.para p{
+    font-size: 1.4rem;
+    margin: 1em auto 2em;
+    line-height: 1.4em;
+}
+.download_btn{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.one{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow:0px 3px hsla(171, 64%, 33%, 0.789)
+}
+.two{
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0px 3px hsla(233, 66%, 60%, 0.462);
+}
+.keep-track{
+    padding: 3em 0;
+}
+.keep-track>h3{
+    font-size: 2.2rem;
+}
+.keep-track>p{
+    margin: 1.2em auto 5em;
+    line-height: 1.6em;
+}
+.lower{
+    display: flex;
+}
+.lower-left img{
+    width: 100%;
+}
+
+.feature-container{
+    margin-left: 17%;
+    height: 90%;
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.feature h5{
+    font-size: 1.5rem;
+}
+.feature p{
+    line-height: 1.8em;
+    margin-top: .5em;
+}
+.accessibility{
+    text-align: center;
+    padding: 3em 0;
+}
+.accessibility h3{
+    font-size: 2.2rem;
+}
+.accessibility p{
+    margin: 1.2em auto 5em;
+    line-height: 1.6em;
+}
+
+.tools{
+    text-align: center;
+    padding: 1em 0 3em;
+}
+.tools h3{
+    font-size: 2.2rem;
+}
+.tools>p{
+    margin: 1.2em auto 3.8em;
+}
+.tools .container{
+    display: flex;
+    justify-content: space-between;
+}
+.tool{
+    flex: 0 0 32%;
+}
+.tool h5{
+    font-size: 1.5rem;
+    margin: 1.5em 0 .5em;
+}
+ .tool p{
+    line-height: 1.7em;
+}
+
+.brands{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5em 0;
+}
+.brands .brand img{
+    width: 90%;
+    margin: auto;
+}
+
+.install .small-container{
+    padding: 3em 0 9em;
+    max-width : 750px;
+}
+.para h3{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.para p{
+    margin: 1em auto 2em;
+    line-height: 1.4em;
+    font-size: 1.2rem;
+}
+footer{
+    background-color: gray;
+    padding: 2.7em 0;
+}
+footer .container{
+    display: flex;
+    align-items: center;
+}
+.footer-logo{
+    flex: 0 0 18%;
+}
+.social-icons{
+    flex : 0 0 14%;
+}
+.footer-logo img{
+    width: 60px;
+}
+.footer-menu{
+    flex:1;
+    display: flex;
+}
+.f-menu{
+    width: 25%;
+}
+.f-menu a{
+    display: block;
+    line-height: 2em;
+    text-decoration: none;
+    color: #000;
+}
+
+.social-icons a{
+    display: block;
+    float: right;
+    width:33.33%;
+    text-align: right;
+}
+.social-icons i:hover{
+    color: hsl(171, 66%, 44%);
+}
+.f-menu a:hover{
+    color:hsl(171, 66%, 44%);
+}
+.attribution{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    font-size: 12px;
+}
