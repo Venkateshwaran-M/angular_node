@@ -1,95 +1,100 @@
 * {
-	margin: 0;
-	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
+	font-size: 100%;
+    margin: 0;
+	padding: 0;
 	vertical-align: baseline;
 }
-
 :root {
-	
-
-	--violet: hsl(263, 55%, 52%);
-	--dark-gray-blue: hsl(217, 19%, 35%);
 	--dark-black-blue: hsl(219, 29%, 14%);
-	--White: hsl(0, 0%, 100%);
-
-	
-
+	--dark-gray-blue: hsl(217, 19%, 35%);
 	--light-gray: hsl(0, 0%, 81%);
 	--light-gray-blue: hsl(210, 46%, 95%);
-}
+    --violet: hsl(263, 55%, 52%);
+     --White: hsl(0, 0%, 100%);
+
+}	
+
+	
 
 body{
+	background-color: var(--light-gray-blue);
 	font-family:'Barlow Semi Condensed', sans-serif;
 	font-size: 13px;
-	background-color: var(--light-gray-blue);
 }
 
 .container {
   display: grid;
+  grid-auto-flow: row;
+  grid-gap: 20px 30px;
+  grid-template-areas:
+  ". . . . . ."
+  ". daniel daniel jonathan kira ."
+  ". jeanette patrick patrick kira .";
+
   grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
   grid-template-rows: 0.2fr 1fr 1fr;
-  grid-gap: 20px 30px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". . . . . ."
-    ". daniel daniel jonathan kira ."
-    ". jeanette patrick patrick kira .";
+ 
 }
 
 .grid{
 	box-shadow: 10px 10px 21px 8px rgba(74,74,74,0.18);
-	-webkit-box-shadow: 10px 10px 21px 8px rgba(74,74,74,0.18);
 	-moz-box-shadow: 10px 10px 21px 8px rgba(74,74,74,0.18);
+	-webkit-box-shadow: 10px 10px 21px 8px rgba(74,74,74,0.18);
+
 }
 
 .grid-1, .grid-2, .grid-5{
 	color: var(--White);
 }
 .quotation{
-	background: url(../../images/bg-pattern-quotation.svg);
-	background-repeat: no-repeat;
-	background-position: 75% 0%;
 	background-blend-mode: lighten;
+	background-position: 75% 0%;
+    background: url(../../images/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+
 }
 
-.grid-1 { 
-	grid-area: daniel;
+.grid-1 {
 	background-color: var(--violet);
+    grid-area: daniel;
 }
 
 .grid-2 { 
-	grid-area: jonathan; 
 	background-color: var(--dark-gray-blue);
+    grid-area: jonathan; 
 
 }
 
 .grid-3 { 
-	grid-area: kira; 
 	background-color: var(--White);
+	grid-area: kira; 
+
 }
 
 .grid-4 { 
-	grid-area: jeanette; 
 	background-color: var(--White);
+	grid-area: jeanette; 
+
 }
 
 .grid-5 { 
-	grid-area: patrick; 
 	background-color: var(--dark-black-blue);
+	grid-area: patrick; 
+
 }
 
 .profile{
-	display: flex;
 	align-items: center;
+    display: flex;
 }
 
 .avatar {
 	border-radius: 50%;
-	max-width:20%;
 	height: auto;
+	max-width:20%;
+
 }
 
 .purple-border{
@@ -97,9 +102,10 @@ body{
     border:3px solid var(--violet);    
     border-radius:50%;
     -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    width:8%;
     height: auto;
+    -webkit-border-radius:50%;
+     width:8%;
+
 }
 
 .white-border{
@@ -107,14 +113,15 @@ body{
     border:3px solid hsla(0, 0%, 70%, 0.85);	
     border-radius:50%;
     -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    width:8%;
     height: auto;
+    -webkit-border-radius:50%;
+     width:8%;
+
 }
 
 .profile p{
-	padding-left: 20px;
 	font-size: 13px;
+    padding-left: 20px;
 }
 
 span{
@@ -132,9 +139,10 @@ span{
 	line-height: 1.4;
 }
 .explanation{
-	padding-bottom: 15px;
-	opacity: 70%;
 	line-height: 1.5;
+	opacity: 70%;
+	padding-bottom: 15px;
+
 }
 
 .testimony, .explanation{
