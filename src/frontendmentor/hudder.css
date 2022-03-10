@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
-
 :root {
     --Grayish-Blue: hsl(208, 11%, 55%);
     --Pink: hsl(322, 100%, 66%);
@@ -8,14 +6,11 @@
     --Very-Pale-Cyan: hsl(193, 100%, 96%);
 
 }
-
 main {
     font-family: 'Poppins', sans-serif;
     width: 100%;
 
 }
-
-
 .box-1 {
     background-color: var(--Very-Pale-Cyan);
     background-image: url("../../images/bg-hero-desktop.svg");
@@ -25,323 +20,320 @@ main {
     width: 100%;
 
 }
-
 @media (max-width: 375px) {
     .box-1 {
-        margin: 0;
-        height: 130vh;
-        background-repeat: no-repeat;
         background-image: url("../../images/bg-hero-mobile.svg");
+        background-repeat: no-repeat;
+        height: 130vh;
     }
 }
-
 #logo {
     margin: 40px 0 0 40px;
 }
-
 @media (max-width: 375px) {
     #logo {
-        width: 110px;
         margin: 20px 0 0 10px;
+        width: 110px;
     }
 }
-
 .box-1 h1 {
-    width: 500px;
-    margin: 161px 0 0 40px;
     font-size: 43px;
-}
+    margin: 161px 0 0 40px;
+    width: 500px;
 
+}
 @media (max-width: 375px) {
     .box-1 h1 {
-        width: 80%;
-        margin: 100px 10% 0 10%;
         font-size: 25px;
+        margin: 100px 10% 0 10%;
         text-align: center;
+        width: 80%;
     }
 }
 
 .box-1 p {
-    width: 570px;
     margin: 20px 0 0 40px;
+    width: 570px;
 }
 
 @media (max-width: 375px) {
     .box-1 p {
-        width: 90%;
-        margin: 20px 5% 0 5%;
         font-size: 14.5px;
+        margin: 20px 5% 0 5%;
         text-align: center;
+        width: 90%;
     }
 }
 
 #link-1 {
-    display: flex;
-    height: 55px;
-    width: 300px;
-    margin-top: 30px;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    border-radius: 50px;
     background-color: var(--Pink);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: center;
+    margin-top: 30px;
+    width: 300px;
 }
-
 #link-1:hover {
     cursor: pointer;
 }
-
 #link-1 a {
     font-size: 14px;
     color: white;
     text-decoration: none;
 }
-
 @media (max-width: 375px) {
     #link-1 {
-        width: 65%;
         height: 40px;
         margin: 20px 20%;
+        width: 65%;
     }
 }
-
 #link-2 {
-    position: absolute;
-    display: flex;
-    top: 40px;
-    left: 80%;
-    height: 45px;
-    width: 180px;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    background-color: white;
     border-radius: 50px;
     box-shadow: 1px 1px 10px hsl(208, 11%, 55%);
-    background-color: white;
-}
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    justify-content: center;
+    left: 80%;
+    position: absolute;
+    top: 40px;
+    width: 180px;
 
+}
 #link-2:hover {
     cursor: pointer;
 }
 
 #link-2 a {
-    font-size: 14px;
     color: var(--Grayish-Blue);
+    font-size: 14px;
     text-decoration: none;
 }
 
 @media (max-width: 375px) {
     #link-2 {
-        width: 100px;
         height: 30px;
-        top: 0;
         left: 58%;
+        top: 0;
+        width: 100px;
+
     }
 
     #link-2 a {
-        font-size: 11px;
         color: black;
+        font-size: 11px;
     }
 }
 
 #mockup {
+    left: 48%;
     position: absolute;
     top: 27%;
-    left: 48%;
     width: 48%;
 }
 
 @media (max-width: 375px) {
     #mockup {
-        top: 88%;
         left: 10%;
+        top: 88%;
         width: 80%;
     }
 }
 
 
 .box-2 {
-    width: 90%;
-    height: 400px;
-    margin: 100px auto 0 auto;
     border-radius: 10px;
     box-shadow: 2px 2px 10px gray;
+    height: 400px;
+    margin: 100px auto 0 auto;
+    width: 90%;
 }
 
 #title {
-    width: 300px;
     margin: 0 0 0 100px;
     padding-top: 140px;
+    width: 300px;
 }
 
 .box-2 #grow-paragraph {
-    width: 500px;
-    margin: 15px 0 0 100px;
     color: var(--Grayish-Blue);
+    margin: 15px 0 0 100px;
+    width: 500px;
+
 }
 
 .box-2 img {
+    left: 60%;
     position: absolute;
     top: 800px;
-    left: 60%;
     width: 30%;
 }
 
 @media (max-width: 375px) {
     .box-2 {
-        height: 90vh;
         margin: 100px auto 0 auto;
+        height: 90vh;
     }
 
     #title {
-        width: 80%;
         margin: 0 10% 0 10%;
         padding-top: 300px;
         text-align: center;
+        width: 80%;
     }
 
     .box-2 #grow-paragraph {
-        width: 80%;
+        font-size: 13px;
         margin: 15px 10% 0 10%;
         text-align: center;
-        font-size: 13px;
+        width: 80%;
+
     }
 
     .box-2 img {
-        top: 155%;
         left: 15%;
+        top: 155%;
         width: 70%;
     }
 }
 
 
 .box-3 {
-    width: 90%;
-    height: 400px;
-    margin: 50px auto;
     border-radius: 10px;
     box-shadow: 2px 2px 10px gray;
+    height: 400px;
+    margin: 50px auto;
+    width: 90%;
 }
 
 .box-3 h2 {
-    width: 300px;
     margin: 0 0 0 660px;
     padding-top: 120px; 
+    width: 300px;
 }
 
 .box-3 #conversation-paragraph {
-    width: 510px;
-    margin: 15px 0 0 660px;
     color: var(--Grayish-Blue);
+    margin: 15px 0 0 660px;
+    width: 510px;
 }
 
 .box-3 img {
+    left: 13%;
     position: absolute;
     top: 1250px;
-    left: 13%;
     width: 32%;
 }
 
 @media (max-width: 375px) {
     .box-3 {
-        width: 90%;
         height: 90vh;
         margin: 40px auto;
+        width: 90%;
     }
     
     .box-3 h2 {
-        width: 80%;
+        font-size: 22px;
         margin: 0 10% 0 10%;
         padding-top: 300px;
-        font-size: 22px;
         text-align: center;
+        width: 80%;
+
     }
     
     .box-3 #conversation-paragraph {
-        width: 80%;
+        font-size: 13px;
         margin: 15px 10% 0 10%;
         text-align: center;
-        font-size: 13px;
+        width: 80%;
+
     }
     
     .box-3 img {
-        top: 260%;
         left: 12%;
+        top: 260%;
         width: 74%;
     }
 }
 
 
 .box-4 {
-    width: 90%;
-    height: 400px;
-    margin: 50px auto 0 auto;
     border-radius: 10px;
     box-shadow: 2px 2px 10px gray;
+    height: 400px;
+    margin: 50px auto 0 auto;
+    width: 90%;
 }
 
 .box-4 h2 {
-    width: 300px;
     margin: 0 0 0 100px;
     padding-top: 140px;
+    width: 300px;
 }
 
 .box-4 #users-paragraph {
-    width: 475px;
-    margin: 15px 0 0 100px;
     color: var(--Grayish-Blue);
+    margin: 15px 0 0 100px;
+    width: 475px;
+
 }
 
 .box-4 img {
+    left: 60%;
     position: absolute;
     top: 1700px;
-    left: 60%;
     width: 30%;
 }
 
 @media (max-width: 375px) {
     .box-4 {
-        width: 90%;
         height: 90vh;
         margin: 40px auto;
+        width: 90%;
     }
     
     .box-4 h2 {
-        width: 80%;
         margin: 0 10% 0 10%;
         padding-top: 290px;
         font-size: 22px;
         text-align: center;
+        width: 80%;
     }
     
     .box-4 #users-paragraph {
-        width: 80%;
+        font-size: 13.5px;
         margin: 10px 10% 0 10%;
         text-align: center;
-        font-size: 13.5px;
+        width: 80%;
     }
     
     .box-4 img {
-        top: 350%;
         left: 12%;
+        top: 350%;
         width: 74%;
     }
 }
 
 
 .box-5 {
-    display: flex;
-    position: absolute;
-    top: 2200px;
-    left: 25%;
-    width: 50%;
-    height: 200px;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: white;
     border-radius: 10px;
     box-shadow: 2px 2px 10px gray;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    left: 25%;
+    position: absolute;
+    top: 2200px;
+    width: 50%;   
 }
 
 .box-5 p {
@@ -349,15 +341,15 @@ main {
 }
 
 #link-3 {
-    display: flex;
-    height: 55px;
-    width: 300px;
-    margin: 0;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    border-radius: 50px;
     background-color: var(--Pink);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    justify-content: center;
+    margin: 0;
+    width: 300px;
 }
 
 #link-3:hover {
@@ -365,17 +357,17 @@ main {
 }
 
 #link-3 a {
-    font-size: 14px;
     color: white;
+    font-size: 14px;
     text-decoration: none;    
 }
 
 @media (max-width: 375px) {
     .box-5 {
-        top: 460%;
         left: 5%;
-        width: 90%;
+        top: 460%;
         height: 180px;
+        width: 90%;
     }
     
     .box-5 p {
@@ -384,48 +376,49 @@ main {
     
     #link-3 {
         height: 40px;
-        width: 200px;
         margin: 0;
+        width: 200px;
     }
 }
 
 
 .box-6 {
-    width: 100%;
+    background-color: var(--Very-Dark-Cyan);
+    color: white;
     height: 60vh;
     margin: 250px auto 0 auto;
-    color: white;
-    background-color: var(--Very-Dark-Cyan);
+    width: 100%;
+
 }
 
 @media (max-width: 375px) {
     .box-6 {
-        margin: 250px auto 0 auto;
         height: 140vh;
+        margin: 250px auto 0 auto;
     }
 }
 
 .information-area {
     display: grid;
-    width: 420px;
-    margin-left: 100px;
-    padding-top: 120px;
+    font-size: 14px;
     grid-template-columns: 30px 380px;
     grid-template-rows: 40px 80px 40px 40px;
-    font-size: 14px;
+    margin-left: 100px;
+    padding-top: 120px;
+    width: 420px;
 }
 
 #footer-logo {
-    width: 170px;
-    margin: 0 0 0 -10px;
     grid-column: 1/3;
     grid-row: 1/2;
+    margin: 0 0 0 -10px;
+    width: 170px;
 }
 
 #icon-location {
-    margin: 15px 0 0 0;
     grid-column: 1/2;
     grid-row: 2/3;
+    margin: 15px 0 0 0;
 }
 
 #location-paragraph {
@@ -436,40 +429,40 @@ main {
 }
 
 #phone-icon {
-    margin: 0;
+    align-self: center;
     grid-column: 1/2;
     grid-row: 3/4;
-    align-self: center;
+    margin: 0;
 }
 
 #phone-paragraph {
-    margin: 0;
+    align-self: center;
     grid-column: 2/3;
     grid-row: 3/4;
-    align-self: center;
+    margin: 0;
 }
 
 #email-icon {
-    margin: 0;
+    align-self: center;
     grid-column: 1/2;
     grid-row: 4/5;
-    align-self: center;
+    margin: 0;
 }
 
 #email-paragraph {
-    margin: 0;
+    align-self: center;
     grid-column: 2/3;
     grid-row: 4/5;
-    align-self: center;
+    margin: 0;
 }
 
 @media (max-width: 375px) {
     .information-area {
-        width: 90%;
-        margin-left: 5%;
+        font-size: 15px;
         grid-template-columns: 30px 290px;
         grid-template-rows: 40px 110px 40px 40px;
-        font-size: 15px;
+        margin-left: 5%;
+        width: 90%;
     }
     
     #location-paragraph {
@@ -480,8 +473,8 @@ main {
 .menu-area {
     display: flex;
     flex-direction: column;
-    margin: -161px 0 0 590px;
     font-size: 14px;
+    margin: -161px 0 0 590px;
 }
 
 .menu-area p {
@@ -510,8 +503,8 @@ main {
 .contact-area {
     display: flex;
     flex-direction: column;
-    margin: -124px 0 0 750px;
     font-size: 14px;
+    margin: -124px 0 0 750px;
 }
 
 .contact-area p {
@@ -539,21 +532,22 @@ main {
 
 .social-media-icons-area {
     display: flex;
-    margin: -112px 0 0 970px;
     flex-direction: row;
+    margin: -112px 0 0 970px;
 }
 
 .social-media-icons-area i {
-    margin: 0 20px 0 0;
-    padding: 10px;
+    
     border: 1px solid white;
     border-radius: 50px;
+    margin: 0 20px 0 0;
+    padding: 10px;
 }
 
 .social-media-icons-area i:hover {
-    cursor: pointer;
-    color: var(--Pink);
     border: 1px solid var(--Pink);
+    color: var(--Pink);
+    cursor: pointer;
 }
 
 #facebook-icon {
@@ -567,14 +561,14 @@ main {
 }
 
 .copy-right-paragraph {
-    margin: 90px 0 0 970px;
     font-size: 14px; 
+    margin: 90px 0 0 970px;
 }
 
 @media (max-width: 375px) {
     .copy-right-paragraph {
-        width: 70%;
-        margin: 20px 15% 0 15%;
         font-size: 11px;
+        margin: 20px 15% 0 15%;
+        width: 70%;
     }
 }
