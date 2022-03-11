@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../themes/intro.css">
+    <link rel="icon" href="../images/favicon-32x32.png" alt="">
+    <title>Intro component with sign up form</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="header">
+            <h1>Learn to code by
+                watching others</h1>
+
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+                but understanding how developers think is invaluable.</p>
+        </div>
+        <div class="forms-container">
+            <button class="btn-action"><span><strong>Try it free 7 days</strong> then $20/mo. thereafter</span>
+            </button>
+            <form id="form" novalidate>
+                <input id="firstName" name="name" type="text" placeholder="First Name" title="Input your First name"
+                    required>
+                <div class="form-error"><em>First Name cannot be empty</em></div>
+                <input id="lastName" name="lastName" type="text" placeholder="Last Name" title="Input your Last name"
+                    required>
+                <div class="form-error"><em>Last Name cannot be empty</em></div>
+                <input id="email" name="email" type="email" placeholder="Email Address" title="Input your email"
+                    required>
+                <div class="form-error"><em>Looks like this is not an email</em></div>
+                <input id="password" name="password" type="password" placeholder="Password" title="Input any password"
+                    required>
+                <div class="form-error"><em>Password cannot be empty</em></div>
+                <input id="formSubmit" class="btn_submit" name="submit" type="submit" value="Claim your free trial">
+                <p>
+                    By clicking the button, you are agreeing to our <a>Terms and Services</a>
+                </p>
+            </form>
+            <script src="../../src/frontendmentor/intro.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

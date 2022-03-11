@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url('../../images/pattern-background-desktop.svg') no-repeat;
+            background-size: contain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .attribution {
+            position: fixed;
+            bottom: 10px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .confirm-card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            width: 25%;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 100%;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px;
+            font-family: "Roboto Hat Display", sans-serif;
+        }
+
+        .card-title {
+            color: hsl(223, 47%, 23%);
+            font-weight: 700;
+        }
+
+        .card-desc {
+            padding: 15px;
+            text-align: center;
+            color: #8488a0;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .subs-plan {
+            margin: 30px 0px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 25px;
+        }
+
+        .subs-plan--info {
+            display: flex;
+            font-size: 16px;
+        }
+
+        .subs-plan--icon {
+            margin: 0 10px;
+            margin-top: -5px;
+        }
+
+        .plan-title {
+            color: #1f2d4a;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .plan-prize {
+            font-size: 14px;
+            color: #8488a0;
+        }
+
+        .subs-plan--action {
+            margin-top: -10px;
+        }
+
+        .subs-plan--action a {
+            color: hsl(245, 75%, 52%);
+        }
+
+        .subs-plan--action a:hover,
+        .subs-plan--action a:active {
+            color: #766cf1;
+        }
+
+        .cto {
+            color: #ffffff;
+            background-color: hsl(245, 75%, 52%);
+            height: 40px;
+            width: 90%;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-weight: 900;
+            font-size: 13px;
+        }
+
+        .cto:active,
+        .cto:hover {
+            background-color: #766cf1;
+        }
+
+        .destroy {
+            color: #8488a0;
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .destroy:hover,
+        .destroy:active {
+            color: #1f2d4a;
+        }
+
+        @media screen and (max-width: 375px) {
+            body {
+                padding: 0 20px;
+                background: url('../../images/pattern-background-mobile.svg') no-repeat;
+            }
+
+            .confirm-card {
+                width: 100%;
+            }
+
+            .subs-plan {
+                padding: 0;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="confirm-card">
+        <div class="card-header">
+            <img src="../../images/illustration-hero.svg" alt="image">
+        </div>
+        <div class="card-body">
+            <h2 class="card-title">
+                Order Summary
+            </h2>
+            <p class="card-desc">
+                You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+            </p>
+            <div class="subs-plan">
+                <div class="subs-plan--info">
+                    <div class="subs-plan--icon">
+                        <img src="../../images/icon-music.svg" alt="">
+                    </div>
+                    <div class="subs-plan--title">
+                        <div class="plan-title">
+                            Annual Plan
+                        </div>
+                        <div class="plan-prize">
+                            $59.99/year
+                        </div>
+                    </div>
+                </div>
+                <div class="subs-plan--action">
+                    <a href="#">Change</a>
+                </div>
+            </div>
+            <button class="cto">
+                Proceed to Payment
+            </button>
+            <a class="destroy" href="#">Cancel Order</a>
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/sberkar"> Shubham Berkar</a>.
+    </div>
+
+</body>
+
+</html>
