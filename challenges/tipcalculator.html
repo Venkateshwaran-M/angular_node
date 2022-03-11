@@ -13,54 +13,67 @@
 </head>
 
 <body>
-    <div class="logo"></div>
-    <img src="../images/1logo.svg" alt="">
-    <div class="tip-calculator">
-        <div class="partOne">
-            <label for="">Bill</label>
-            <input type="number" class="input bill-input" id="bill-input">
-            <label for="">Select tip%</label>
-            <div class="tip">
-                <div class="tips tip-5">5%</div>
-                <div class="tips tip-10">10%</div>
-                <div class="tips tip-15 active-tip">15%</div>
-                <div class="tips tip-25">25%</div>
-                <div class="tips tip-50">50%</div>
-                <div id="tip-custom"><input type=number class="tip.custom" plceholder="CUSTOM"></div>
 
-            </div>
-            <div class="peopleLabel">
-                <label for="">Number of people</label>
-                <label for="" class="error">Can't be zero</label>
-            </div>
-            <input type="number" class="input people-input">
-
-        </div>
-        <div class="result">
-            <div class="tip-amount">
-                <div class="text">
-                    <p>Tip Amount</p>
-                    <p class="person">/ person</p>
-
+    <img src="../images/1logo.svg" alt="split tier">
+    <section id="container">
+        <div class="tip-calculator-container">
+            <div class="bill-container">
+                <div class="bill-label">
+                    <label for="bill">Bill</label>
+                    <span class="invalid-message">Can't be zero </span>
                 </div>
-                <div class="amount" id="tip.amount">$ 0.00</div>
-
-            </div>
-            <div class="Total">
-                <div class="text">
-                    <p>Total</p>
-                    <p class="person">/ person</p>
-
+                <div class="bill-input">
+                    <img src="../images/icon-dollar.svg" alt="dollar">
+                    <input type="number" id="bill" placeholder="0" min="0">
                 </div>
-                <div class="amount" id="total.amount">$ 0.00</div>
             </div>
-            <div class="reset">RESET</div>
-
+            <div class="select-tip-container">
+                <label for="">Select Tip%</label>
+                <div class="tip-buttons">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                    <button>50%</button>
+                    <input type="number" placeholder="Custom" class="custom" min="0">
+                </div>
+            </div>
+            <div class="number-people-container">
+                <div class="number-people-label">
+                    <label for="number-people">Number of People</label>
+                    <span class="invalid-message">Can't be zero</span>
+                </div>
+                <div class="number-people-input">
+                    <img src="../images/icon-person.svg" alt="icon person">
+                    <input type="number" id="number-people" placeholder="0" min="0">
+                </div>
+            </div>
         </div>
+        <div class="tip-result-container">
+            <div class="tip-resuls">
+                <div class="tip-amount">
+                    <div>
+                        <h4>Tip Amount</h3>
+                            <h5>Person
+                        </h4>
+                    </div>
+                    <span id="tip-amount-result">$0.00</span>
+                </div>
+                <div class="total-person">
+                    <div>
+                        <h4>Total</h3>
+                            <h5>/ Person
+                        </h4>
+                    </div>
+                    <span id="total-person-result">$0.00</span>
+                </div>
+            </div>
+            <button id="reset-tip-calculation">Reset</button>
+        </div>
+        </div>
+    </section>
 
-    </div>
 
-    <script src="../frontendmentor/tip.js"></script>
+    <script src="../src/frontendmentor/tip.js"></script>
 
 </body>
 

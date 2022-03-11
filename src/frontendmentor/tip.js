@@ -1,65 +1,128 @@
-tipCustom.addEventListener("input", tipInputFun);
+const inputBill = document.querySelector('#bill')
+const inputNumberPeople = document.querySelector('#number-people')
+const inputTipPercentage = document.querySelector('.custom')
+const tipPercentageButtons = document.querySelector('.tip-buttons')
+const tipResetButton = document.querySelector('#reset-tip-calculation')
+let tipPercentageText = null; 
+const invalidInputMessages = document.querySelectorAll('.invalid-message')
 
-billInput.value = "0.0";
-peopleInput.value = "1";
-tipPerPerson.innerHTML = "$" + (0.0).toFixed(2);
-totalPerPerson.innerHTML = "$" + (0.0).toFixed(2);
+const handleBillInputChange = () => {
+    const inputBillIsValid = validateInputElement(inputBill) 
+    const invalidMessage = invalidInputMessages[0]
 
-let billValue = 0.0;
-let peopleValue = 1;
-let tipValue = 0.15;
-
-function billInputFun() {
-  billValue = parseFloat(billInput.value);
-  calculateTip();
-}
-
-function tipInputFun() {
-  tipValue = parseFloat(tipCustom.value / 100);
-
-  tips.forEach(function (val) {
-    val.classList.remove("active-tip");
-  });
-  calculateTip();
-}
-
-function peopleInputFun() {
-  peopleValue = parseFloat(peopleInput.value);
-
-  if (peopleValue < 1) {
-    error.style.display = "flex";
-    peopleInput.style.border = "thick solid red";
-  } else {
-    error.style.display = "none";
-    peopleInput.style.border = "none";
-    calculateTip();
-  }
-}
-
-function handleClick(event) {
-  tips.forEach(function (val) {
-    val.classList.remove("active-tip");
-    if (event.target.innerHTML == val.innerHTML) {
-      val.classList.add("active-tip");
-      tipValue = parseFloat(val.innerHTML) / 100;
+    if(!inputBillIsValid) {
+        inputBill.classList.add('error')
+        invalidMessage.style.display = 'block'
+        return
     }
-  });
-  calculateTip();
+
+    invalidMessage.style.display = 'none'
+    inputBill.classList.remove('error')
+    calculateTip()
 }
 
-function calculateTip() {
-  if (peopleValue >= 1) {
-    let tipAmount = (billValue * tipValue) / peopleValue;
-    let total = (billValue + tipAmount) / peopleValue;
-    tipPerPerson.innerHTML = "$" + tipAmount.toFixed(2);
-    totalPerPerson.innerHTML = "$" + total.toFixed(2);
-  }
+const handleTipPercentageInputChange = () => {
+    const customTipInputIsValid = validateInputElement(inputTipPercentage)
+    
+    if(!customTipInputIsValid) {
+        return inputTipPercentage.classList.add('error')
+    }
+
+    inputTipPercentage.classList.remove('error')
+    tipPercentageText = inputTipPercentage.value
+    calculateTip()
 }
 
-function reset() {
-  billInput.value = "0.0";
-  billInputFun();
-  peopleInput.value = "1";
-  peopleInputFun();
-  tipCustom.value = "";
+const handleNumberPeopleInputChange = () => {
+    const inputNumberPeopleIsValid = validateInputElement(inputNumberPeople)
+    const invalidMessage = invalidInputMessages[1]
+    
+    if(!inputNumberPeopleIsValid) {
+        inputNumberPeople.classList.add('error')
+        invalidMessage.style.display = 'block'
+        return
+    }
+
+    invalidMessage.style.display = 'none'
+    inputNumberPeople.classList.remove('error')
+    calculateTip()
 }
+
+const validateInputElement = input => Number(input.value) > 0
+
+
+const handleTipPercentageButtonClick = (el) => {
+    const tipButtons = tipPercentageButtons.children
+    
+    for (let tipButton of tipButtons) {
+        tipButton.classList.remove('active')
+        const tipButtonIsBeingClicked = tipButton === el
+        if(tipButtonIsBeingClicked) {
+            tipButton.classList.add('active')
+            tipPercentageText = tipButton.innerText.replace('%', '')
+        }
+    }
+
+    calculateTip()
+}
+
+const calculateTip = () => {
+    changeTipResetButtonActiveState(true)
+
+    const bill = Number(inputBill.value)
+    const numberOfPeople = Number(inputNumberPeople.value)
+    const tipPercentage = Number(tipPercentageText)/100
+
+    if(!bill || !numberOfPeople || !tipPercentage) return
+    
+    const tipAmountPerPerson = (bill * tipPercentage) / numberOfPeople
+    const totalPerPerson = (bill + bill * tipPercentage) / numberOfPeople 
+
+    updateTipResult(tipAmountPerPerson, totalPerPerson)
+}
+
+const changeTipResetButtonActiveState = (active) => {
+    active ? tipResetButton.classList.add('active') : tipResetButton.classList.remove('active')
+}
+
+const updateTipResult = (tipAmountPerPerson, totalPerPerson) => {
+    const tipAmountResult = document.querySelector('#tip-amount-result')
+    const totalPerPersonResult = document.querySelector('#total-person-result')
+
+    tipAmountResult.innerText = `$${tipAmountPerPerson.toFixed(2)}`
+    totalPerPersonResult.innerText = `$${totalPerPerson.toFixed(2)}`
+}
+
+const handleTipResetButtonClick = () => {
+    inputBill.value = ''
+    inputNumberPeople.value = ''
+    inputTipPercentage.value = ''
+
+    inputBill.classList.remove('error')
+    inputNumberPeople.classList.remove('error')
+    inputTipPercentage.classList.remove('error')
+
+    tipPercentageText = null
+
+    for (let invalidMessage of invalidInputMessages) {
+        invalidMessage.style.display = 'none'
+    }
+
+    const tipButtons = tipPercentageButtons.children
+    for (let tipButton of tipButtons) {
+        tipButton.classList.remove('active')
+    }
+
+    changeTipResetButtonActiveState(false)
+    updateTipResult(0, 0)
+}
+
+inputBill.addEventListener('change', () => handleBillInputChange())
+inputTipPercentage.addEventListener('change', () => handleTipPercentageInputChange())
+inputNumberPeople.addEventListener('change', () => handleNumberPeopleInputChange())
+tipPercentageButtons.addEventListener('click', (e) => {
+    const el = e.target
+    if (el.classList.contains('custom')) return
+    handleTipPercentageButtonClick(el)
+})
+tipResetButton.addEventListener('click', () => handleTipResetButtonClick())
