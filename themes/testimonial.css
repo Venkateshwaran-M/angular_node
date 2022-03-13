@@ -49,7 +49,7 @@ body {
 .quotation {
   background-blend-mode: lighten;
   background-position: 75% 0%;
-  background: url(../../images/bg-pattern-quotation.svg);
+  background: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
 }
 
