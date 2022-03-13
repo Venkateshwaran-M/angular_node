@@ -1,0 +1,328 @@
+:root {
+  --full-slider: hsl(174, 77%, 80%);
+  --slider-bg: hsl(174, 86%, 45%);
+  --empty-slider: hsl(224, 65%, 95%);
+  --discount-bg: hsl(14, 92%, 95%);
+  --discount-text: hsl(15, 100%, 70%);
+  --cta-text: hsl(226, 100%, 87%);
+
+  --pricing-bg: hsl(0, 0%, 100%);
+  --main-bg: hsl(230, 100%, 99%);
+  --toggle-button-bg: hsl(223, 50%, 87%);
+  --text: hsl(225, 20%, 60%);
+  --header-text: hsl(227, 35%, 25%);
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(./images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-color: var(--main-bg);
+  font-family: "Manrope", sans-serif;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 75px;
+}
+.header {
+  background-image: url(./images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 50% 65%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header h1 {
+  margin-top: 50px;
+  margin-bottom: 0;
+  color: var(--header-text);
+  font-size: 25px;
+  font-weight: 800;
+}
+.header p {
+  margin-top: 10px;
+  padding-top: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.7em;
+}
+
+.container {
+  min-width: 375px;
+  background-color: var(--pricing-bg);
+  border-radius: 10px;
+  box-shadow: 0px 15px 15px 0px var(--empty-slider);
+}
+
+.pageviews {
+  padding-top: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 800;
+}
+.slider-container {
+  margin: 45px auto;
+}
+.slider {
+  -webkit-appearance: none;
+  width: 85%;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--empty-slider);
+  outline: none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  border: none;
+  background: url(./images/icon-slider.svg);
+  background-color: var(--slider-bg);
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  cursor: pointer;
+  box-shadow: 0 15px 15px 2px var(--full-slider);
+  transition: 0.4s;
+}
+.slider::-webkit-slider-thumb:hover {
+  background-color: var(--full-slider);
+}
+.slider::-moz-range-thumb {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  border: none;
+  background: url(./images/icon-slider.svg);
+  background-color: var(--slider-bg);
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+  cursor: pointer;
+  box-shadow: 0 20px 20px 8px var(--full-slider);
+  transition: 0.4s;
+}
+.slider::-moz-range-thumb:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+.slider::-moz-range-progress {
+  height: 10px;
+  border-radius: 5px;
+  background: var(--full-slider);
+}
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price {
+  font-weight: 800;
+  font-size: 36px;
+  color: var(--header-text);
+}
+.price-month {
+  font-size: 16px;
+}
+.switch-container {
+  margin: 40px auto;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-areas: "left center right";
+}
+.grid-left {
+  grid-area: left;
+  text-align: right;
+}
+.grid-center {
+  grid-area: center;
+}
+.grid-right {
+  grid-area: right;
+  text-align: left;
+}
+.discount {
+  color: var(--discount-text);
+  background-color: var(--discount-bg);
+  border-radius: 20px;
+  padding: 3px 6px;
+  margin-left: 4px;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* The switch - the box around the toggle */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* toggle */
+.toggle {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--toggle-button-bg);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggle:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--main-bg);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .toggle {
+  background-color: var(--slider-bg);
+  transition: 0.4s;
+}
+
+input:hover + .toggle {
+  background-color: var(--full-slider);
+  transition: 0.4s;
+}
+
+input:checked + .toggle:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+/* Rounded toggle */
+.toggle.round {
+  border-radius: 19px;
+}
+
+.toggle.round:before {
+  border-radius: 50%;
+}
+
+hr {
+  height: 1px;
+  color: var(--empty-slider);
+  background-color: var(--empty-slider);
+  border: none;
+}
+
+.ticks {
+  margin: 25px auto 35px auto;
+  font-size: 14px;
+}
+.ticks p::before {
+  content: "";
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: none;
+  background: url(./images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+  margin-right: 15px;
+}
+button {
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  background-color: var(--header-text);
+  color: var(--cta-text);
+  margin-bottom: 38px;
+  padding: 15px 55px;
+}
+button:hover {
+  color: var(--pricing-bg);
+}
+
+.attribution {
+  margin: 75px auto 10px auto;
+  font-size: 11px;
+  bottom: 5px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 700px) {
+  .header p {
+    max-width: 22ch;
+  }
+  .discount-big {
+    display: none;
+  }
+}
+@media (min-width: 701px) {
+  .container {
+    min-width: 600px;
+  }
+  .discount-small {
+    display: none;
+  }
+
+  .ticks-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .ticks {
+    width: 300px;
+    text-align: left;
+    margin: 25px auto 25px 50px;
+  }
+  button {
+    margin: 0;
+  }
+  .button {
+    width: 300px;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80px 100px;
+    grid-template-areas:
+      "a b"
+      "c c";
+  }
+  .pageviews {
+    grid-area: a;
+  }
+  .price-container {
+    padding-top: 24px;
+    grid-area: b;
+  }
+  .slider-container {
+    grid-area: c;
+    width: 100%;
+  }
+}
