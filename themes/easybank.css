@@ -1,0 +1,256 @@
+body {
+  max-width: 1440px;
+  font-family: "Public Sans", sans-serif;
+  color: hsl(233, 8%, 62%);
+  line-height: 1.5;
+  margin: 0;
+}
+
+button {
+  background: linear-gradient(to right, #31d35c 5%, #2bb7da 100%);
+  border-radius: 21px;
+  border-width: 0px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
+button:hover {
+  background: linear-gradient(to right, #31d35c 5%, #2bb7da 100%);
+  opacity: 0.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: hsl(233, 26%, 24%);
+  margin: 0;
+}
+
+h4 {
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+
+.navbar-div {
+  position: relative;
+  z-index: 5;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 10%;
+}
+
+.navbar-div a {
+  color: hsl(233, 8%, 62%);
+  text-decoration: none;
+  padding-bottom: 10px;
+  margin-left: 10px;
+}
+
+.navbar-div a:hover {
+  color: hsl(233, 26%, 24%);
+  border-bottom: solid 3px hsl(136, 65%, 51%);
+}
+.hamburger-icon {
+  display: none;
+}
+.close-icon {
+  display: none;
+}
+.top-container {
+  display: flex;
+  background: url("../images/bank/bg-intro-desktop.svg") no-repeat
+    hsl(0, 0%, 98%);
+  background-position: 300% 50%;
+  padding: 5%;
+  overflow: hidden;
+}
+
+.main-heading h1 {
+  width: 250px;
+  font-weight: 400;
+}
+
+.main-heading p {
+  width: 400px;
+  padding: 30px 0;
+}
+
+.mobile-img-div {
+  overflow: hidden;
+  position: absolute;
+  left: 49.6%;
+  top: 6%;
+}
+
+.mobile-img {
+  margin-top: -10rem;
+  margin-right: -5rem;
+}
+
+.middle-container {
+  background-color: hsl(220, 16%, 96%);
+  padding: 5% 10%;
+}
+
+.cards-div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+}
+
+.last-container {
+  background-color: hsl(0, 0%, 98%);
+  padding: 5% 10%;
+}
+
+.last-container-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+}
+
+.showcase-img {
+  background-color: #fff;
+}
+
+.showcase-img img:hover {
+  opacity: 0.6;
+}
+
+.showcase-img h5 {
+  width: 230px;
+}
+
+.showcase-img h5:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+.bottom-div {
+  padding: 5% 10%;
+  background-color: hsl(233, 26%, 24%);
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+}
+.about-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.about-info a:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+.about-info span {
+  padding-top: 40px;
+}
+
+.social-media-icon:hover {
+  filter: invert(59%) sepia(94%) saturate(393%) hue-rotate(83deg)
+    brightness(96%) contrast(85%);
+  cursor: pointer;
+}
+
+.about-info button {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 500px) {
+  body {
+    text-align: center;
+  }
+
+  .logo-img {
+    width: 150px;
+  }
+  .navbar-div button {
+    display: none;
+  }
+  .hamburger-icon {
+    display: inline;
+  }
+  .dropdown-links {
+    display: none;
+    background-color: #fff;
+    line-height: 3;
+    box-shadow: 0px 8px 16px 150px rgba(0, 0, 0, 0.2);
+  }
+  .dropdown-links a {
+    display: block;
+  }
+  .dropdown-links-show {
+    display: block;
+    z-index: 10;
+    position: absolute;
+    top: 75px;
+    left: 10px;
+    padding: 10px 40%;
+  }
+
+  .top-container {
+    flex-direction: column-reverse;
+    background-image: url("../images/bank/bg-intro-mobile.svg");
+    background-position: top;
+    background-size: contain;
+    padding: 0 0 100px 0;
+  }
+
+  .main-heading h1 {
+    width: 60%;
+    display: inline-block;
+    padding-top: 50px;
+  }
+
+  .main-heading p {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .mobile-img-div {
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+
+  .mobile-img {
+    width: 90%;
+    margin-right: 0;
+    margin-top: -10rem;
+  }
+
+  .middle-container {
+    padding: 5% 0;
+  }
+
+  .cards-div {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+  }
+
+  .last-container-cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 10px;
+  }
+
+  .showcase-img h5 {
+    width: 90%;
+  }
+
+  .bottom-div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
