@@ -5,21 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css?family=Barlow+Condensed:200,300,400,500,600,700,800|Barlow:200,300,400,500,600,700,800|Dancing+Script:400,500,600,700|Rancho&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montez|Montserrat:400,600,600i,700,800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../themes/projecttracking.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <title> Project tracking intro component </title>
 </head>
 
 <body>
-    <nav class="navigtion">
-        <input type="checkbox" class="checkbox" id="click" hidden>
-        <div class="nav-logo"></div>
+    <nav>
+        <img src="../images/project/logo.svg" alt="logo" class="logo">
+        <ul class="lists">
+            <li>Product</li>
+            <li>Features</li>
+            <li>pricing</li>
+            <li class="dot"></li>
+            <li>Login</li>
+        </ul>
+        <img src="../images/project/icon-hamburger.svg" alt="hamburger icon" class="icon ham">
+        <img src="../images/project/icon-close.svg" alt="close" class="icon close">
     </nav>
+    <main>
+        <div class="content">
+            <div class="pre-heading">
+                <h4 class="new">New</h4>
+                <h4 class="pre">Monograph Dashboard</h4>
+            </div>
+            <h1>Powerful insights into your team</h1>
+            <p>
+                Project planning and time tracking for agile teams
+            </p>
+            <div class="btn-pre">
+                <button class="btn">
+                    Schedule a demo
+                </button>
+                <h4 class="pre live">
+                    to see a live preview
+                </h4>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../images/project/illustration-devices.svg" alt="illustration-devices">
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.close').hide();
+            $('.lists').hide();
+            $('.ham').on('click', () => {
+                $('.ham').toggle();
+                $('.close').toggle();
+                $('.lists').toggle();
+            });
+            $('.close').on('click', () => {
+                $('.close').toggle();
+                $('.ham').toggle();
+                $('.lists').toggle();
+            });
+        })
+    </script>
+
 </body>
 
 </html>
