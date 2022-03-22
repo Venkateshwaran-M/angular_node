@@ -13,10 +13,12 @@
 
 <body>
     <div class="card">
-        <img class="mobile-img" src="../images/illustration-woman-online-mobile.svg" alt="">
+        <img class="mobile-img" src="../images/illustration-woman-online-mobile.svg"
+            alt="illustration-woman-online-mobile">
         <img class="mobile-img-2" src="../images/bg-pattern-mobile.svg" alt="Shadow">
         <div class="desktop-img-container">
-            <img class="desktop-img" src="../images/illustration-woman-online-desktop.svg" alt="">
+            <img class="desktop-img" src="../images/illustration-woman-online-desktop.svg"
+                alt="illustration-woman-online-desktop">
             <img class="desktop-img-2" src="../images/bg-pattern-desktop.svg" alt="Box">
             <img class="desktop-img-3" src="../images/illustration-box-desktop.svg" alt="Shadow">
         </div>
@@ -24,7 +26,8 @@
 
             <h1>FAQ</h1>
 
-            <button class="accordion">How many team members can I invite?</button>
+            <button class="accordion">How many team members can I invite?
+            </button>
             <div class="panel">
                 <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the
                     Premium plan.</p>
@@ -46,7 +49,7 @@
 
             <button class="accordion">Can I cancel my subscription?</button>
             <div class="panel">
-                <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                <p>Yes! Send us a message and we'll process your request no questions asked.</p>
             </div>
             <hr>
 
@@ -58,22 +61,7 @@
 
         </div>
     </div>
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
+    <script src="../JS files/faq.js"></script>
 
 </body>
 

@@ -1,198 +1,194 @@
 :root {
-    --fs: 12px;
-    --ff: 'Kumbh Sans', sans-serif;
-    --fw-regular: 400;
-    --fw-bold: 700;
-    --txt-color-1:hsl(238, 29%, 16%);
-    --txt-color-2:hsl(14, 88%, 65%);
-    --txt-color-3:hsl(237, 12%, 33%);
-    --txt-color-4:hsl(240, 6%, 50%);
-    --divider-color:hsl(240, 5%, 91%);
-    --bg-color-1:hsl(273, 75%, 66%);
-    --bg-color-2:hsl(240, 73%, 65%);
-
+  --fs: 12px;
+  --ff: "Kumbh Sans", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --txt-color-1: hsl(238, 29%, 16%);
+  --txt-color-2: hsl(14, 88%, 65%);
+  --txt-color-3: hsl(237, 12%, 33%);
+  --txt-color-4: hsl(240, 6%, 50%);
+  --divider-color: hsl(240, 5%, 91%);
+  --bg-color-1: hsl(273, 75%, 66%);
+  --bg-color-2: hsl(240, 73%, 65%);
 }
 
 html {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* *, *:before, *:after {
-    box-sizing: inherit; */
-
-
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--ff);
-    color: var(--txt-color-1);
-    font-weight: var(--fw-regular);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff);
+  color: var(--txt-color-1);
+  font-weight: var(--fw-regular);
 }
 
 .mobile-img {
-    height: 10rem;
-    margin: -6rem auto 0 auto;
-    display: block;
+  height: 10rem;
+  margin: -6rem auto 0 auto;
+  display: block;
 }
 
 .mobile-img-2 {
-    width: 211px;
-    margin: -4rem auto 0 auto;
-    display: block;
+  width: 211px;
+  margin: -4rem auto 0 auto;
+  display: block;
 }
 
 .desktop-img {
-    display: none;
+  display: none;
 }
 
 .desktop-img-2 {
-    display: none;
+  display: none;
 }
 
 .desktop-img-3 {
-    display: none;
+  display: none;
 }
 
 .card {
-    margin-top: 7.5rem;
-    width: 90%;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  margin-top: 7.5rem;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .content {
-    padding-top: calc(1/2rem);
-    padding-bottom: 2rem;
-    text-align: left;
+  padding-top: calc(1 / 2rem);
+  padding-bottom: 2rem;
+  text-align: left;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
+}
+ccordion {
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: var(--ff);
+  font-size: 0.8rem;
+  color: var(--txt-color-1);
 }
 
-.accordion {
-    background-color:#fff;
-    cursor: pointer;
-    transition: 0.5s;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    font-family: var(--ff);
-    font-size: 0.8rem;
-    color: var(--txt-color-1);
-}
-  
 .active {
-    font-weight: bold;
+  font-weight: bold;
 }
-  
+
 .panel {
-    font-size: var(--fs);
-    color: hsl(240, 6%, 50%);
-    overflow: hidden;
-    max-height: 0;
-    padding: 0 1.5rem;
-    transition: max-height 0.2s ease-out;
-    justify-content: center;
+  font-size: var(--fs);
+  color: hsl(240, 6%, 50%);
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 1.5rem;
+  transition: max-height 0.2s ease-out;
+  justify-content: center;
 }
 
 hr {
-    width: 85%;
-    border: 1px solid var(--divider-color);
+  width: 85%;
+  border: 1px solid var(--divider-color);
 }
 
 .attribution {
-    margin-top: 2rem;
-    font-size: 11px;
-    color: var(--divider-color);
-    text-align: center;
-    position: relative;
-    width: 100%;
+  margin-top: 2rem;
+  font-size: 11px;
+  color: var(--divider-color);
+  text-align: center;
+  position: relative;
+  width: 100%;
 }
 .attribution a {
-    color: #F47B56;
-    text-decoration: none;
+  color: #f47b56;
+  text-decoration: none;
 }
 
 @media (min-width: 1100px) {
-    .card {
-        margin: 0;
-        margin-top: 2rem;
-        width: 900px;
-        display: flex;
-        gap: 2rem;
-        align-items: center;
-    }
+  .card {
+    margin: 0;
+    margin-top: 2rem;
+    width: 900px;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
 
-    .mobile-img {
-        display: none;
-    }
+  .mobile-img {
+    display: none;
+  }
 
-    .mobile-img-2 {
-        display: none;
-    }
+  .mobile-img-2 {
+    display: none;
+  }
 
-    .desktop-img-3 {
-        display: block;
-        position: absolute;
-        top: 270px;
-        left: 95px;
-        z-index: 1;
-    }
+  .desktop-img-3 {
+    display: block;
+    position: absolute;
+    top: 270px;
+    left: 95px;
+    z-index: 1;
+  }
 
-    .desktop-img {
-        display: inline-block;
-        position: absolute;
-        top: 140px;
-        left: 120px;
-        z-index: 0;
-    }
+  .desktop-img {
+    display: inline-block;
+    position: absolute;
+    top: 140px;
+    left: 120px;
+    z-index: 0;
+  }
 
-    .desktop-img-2 {
-        display: inline-block;
-        position: absolute;
-        width: 420px;
-        top: 140px;
-        left: 120px;
-        z-index: 0;
-    }
+  .desktop-img-2 {
+    display: inline-block;
+    position: absolute;
+    width: 420px;
+    top: 140px;
+    left: 120px;
+    z-index: 0;
+  }
 
-    .desktop-img-container {
-        flex: 1;
-        position: relative;
-        top: -335px;
-        right: 200px;
-    }
+  .desktop-img-container {
+    flex: 1;
+    position: relative;
+    top: -335px;
+    right: 200px;
+  }
 
-    .content {
-        flex: 1;
-        padding-top: 3rem;
-        padding-bottom: 4rem;
-    }
+  .content {
+    flex: 1;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
 
-    h1 {
-        text-align: left;
-    }
+  h1 {
+    text-align: left;
+  }
 
-    .accordion {
-        padding: 1rem 0;
-        font-size: 1rem;
-    }
+  .accordion {
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
 
-    .panel {
-        padding-left: 0;
-        padding-right: 4rem;
-    }
+  .panel {
+    padding-left: 0;
+    padding-right: 4rem;
+  }
 
-    hr {
-        margin-right: 4rem;
-    }
+  hr {
+    margin-right: 4rem;
+  }
 }
