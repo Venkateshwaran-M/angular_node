@@ -68,3 +68,20 @@ button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+@media (max-width: 500px) {
+  .button {
+    align-items: center;
+    overflow: auto;
+    width: 250px;
+    margin: 30px 20px 30px 60px;
+  }
+  body {
+    max-width: 812px;
+    height: 812px;
+  }
+  .li {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}

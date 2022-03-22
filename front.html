@@ -59,6 +59,13 @@
         .grid-item:hover {
             background-color: lightgreen;
         }
+
+        @media (max-width:500px) {
+            .grid-items {
+                grid-template-columns: 1fr;
+                background-repeat: no-repeat;
+            }
+        }
     </style>
 </head>
 
