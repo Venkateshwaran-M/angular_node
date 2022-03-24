@@ -46,12 +46,10 @@ main {
     width: 80%;
   }
 }
-
 .box-1 p {
   margin: 20px 0 0 40px;
   width: 570px;
 }
-
 @media (max-width: 375px) {
   .box-1 p {
     font-size: 14.5px;
@@ -60,7 +58,6 @@ main {
     width: 90%;
   }
 }
-
 #link-1 {
   align-items: center;
   background-color: var(--Pink);
@@ -76,8 +73,8 @@ main {
   cursor: pointer;
 }
 #link-1 a {
-  font-size: 14px;
   color: white;
+  font-size: 14px;
   text-decoration: none;
 }
 @media (max-width: 375px) {
@@ -104,13 +101,11 @@ main {
 #link-2:hover {
   cursor: pointer;
 }
-
 #link-2 a {
   color: var(--Grayish-Blue);
   font-size: 14px;
   text-decoration: none;
 }
-
 @media (max-width: 375px) {
   #link-2 {
     height: 30px;
@@ -118,20 +113,17 @@ main {
     top: 0;
     width: 100px;
   }
-
   #link-2 a {
     color: black;
     font-size: 11px;
   }
 }
-
 #mockup {
   left: 48%;
   position: absolute;
   top: 27%;
   width: 48%;
 }
-
 @media (max-width: 375px) {
   #mockup {
     left: 10%;
@@ -139,7 +131,6 @@ main {
     width: 80%;
   }
 }
-
 .box-2 {
   border-radius: 10px;
   box-shadow: 2px 2px 10px gray;
@@ -147,53 +138,45 @@ main {
   margin: 100px auto 0 auto;
   width: 90%;
 }
-
 #title {
   margin: 0 0 0 100px;
   padding-top: 140px;
   width: 300px;
 }
-
 .box-2 #grow-paragraph {
   color: var(--Grayish-Blue);
   margin: 15px 0 0 100px;
   width: 500px;
 }
-
 .box-2 img {
   left: 60%;
   position: absolute;
   top: 800px;
   width: 30%;
 }
-
 @media (max-width: 375px) {
   .box-2 {
-    margin: 100px auto 0 auto;
     height: 90vh;
+    margin: 100px auto 0 auto;
   }
-
   #title {
     margin: 0 10% 0 10%;
     padding-top: 300px;
     text-align: center;
     width: 80%;
   }
-
   .box-2 #grow-paragraph {
     font-size: 13px;
     margin: 15px 10% 0 10%;
     text-align: center;
     width: 80%;
   }
-
   .box-2 img {
     left: 15%;
     top: 155%;
     width: 70%;
   }
 }
-
 .box-3 {
   border-radius: 10px;
   box-shadow: 2px 2px 10px gray;
@@ -201,33 +184,28 @@ main {
   margin: 50px auto;
   width: 90%;
 }
-
 .box-3 h2 {
   margin: 0 0 0 660px;
   padding-top: 120px;
   width: 300px;
 }
-
 .box-3 #conversation-paragraph {
   color: var(--Grayish-Blue);
   margin: 15px 0 0 660px;
   width: 510px;
 }
-
 .box-3 img {
   left: 13%;
   position: absolute;
   top: 1250px;
   width: 32%;
 }
-
 @media (max-width: 375px) {
   .box-3 {
     height: 90vh;
     margin: 40px auto;
     width: 90%;
   }
-
   .box-3 h2 {
     font-size: 22px;
     margin: 0 10% 0 10%;
@@ -235,21 +213,18 @@ main {
     text-align: center;
     width: 80%;
   }
-
   .box-3 #conversation-paragraph {
     font-size: 13px;
     margin: 15px 10% 0 10%;
     text-align: center;
     width: 80%;
   }
-
   .box-3 img {
     left: 12%;
     top: 260%;
     width: 74%;
   }
 }
-
 .box-4 {
   border-radius: 10px;
   box-shadow: 2px 2px 10px gray;
@@ -257,55 +232,47 @@ main {
   margin: 50px auto 0 auto;
   width: 90%;
 }
-
 .box-4 h2 {
   margin: 0 0 0 100px;
   padding-top: 140px;
   width: 300px;
 }
-
 .box-4 #users-paragraph {
   color: var(--Grayish-Blue);
   margin: 15px 0 0 100px;
   width: 475px;
 }
-
 .box-4 img {
   left: 60%;
   position: absolute;
   top: 1700px;
   width: 30%;
 }
-
 @media (max-width: 375px) {
   .box-4 {
     height: 90vh;
     margin: 40px auto;
     width: 90%;
   }
-
   .box-4 h2 {
+    font-size: 22px;
     margin: 0 10% 0 10%;
     padding-top: 290px;
-    font-size: 22px;
     text-align: center;
     width: 80%;
   }
-
   .box-4 #users-paragraph {
     font-size: 13.5px;
     margin: 10px 10% 0 10%;
     text-align: center;
     width: 80%;
   }
-
   .box-4 img {
     left: 12%;
     top: 350%;
     width: 74%;
   }
 }
-
 .box-5 {
   align-items: center;
   background-color: white;
@@ -320,11 +287,9 @@ main {
   top: 2200px;
   width: 50%;
 }
-
 .box-5 p {
   font-size: 25px;
 }
-
 #link-3 {
   align-items: center;
   background-color: var(--Pink);
@@ -336,36 +301,30 @@ main {
   margin: 0;
   width: 300px;
 }
-
 #link-3:hover {
   cursor: pointer;
 }
-
 #link-3 a {
   color: white;
   font-size: 14px;
   text-decoration: none;
 }
-
 @media (max-width: 375px) {
   .box-5 {
+    height: 180px;
     left: 5%;
     top: 460%;
-    height: 180px;
     width: 90%;
   }
-
   .box-5 p {
     font-size: 19px;
   }
-
   #link-3 {
     height: 40px;
     margin: 0;
     width: 200px;
   }
 }
-
 .box-6 {
   background-color: var(--Very-Dark-Cyan);
   color: white;
@@ -373,14 +332,12 @@ main {
   margin: 250px auto 0 auto;
   width: 100%;
 }
-
 @media (max-width: 375px) {
   .box-6 {
     height: 140vh;
     margin: 250px auto 0 auto;
   }
 }
-
 .information-area {
   display: grid;
   font-size: 14px;
@@ -390,55 +347,47 @@ main {
   padding-top: 120px;
   width: 420px;
 }
-
 #footer-logo {
   grid-column: 1/3;
   grid-row: 1/2;
   margin: 0 0 0 -10px;
   width: 170px;
 }
-
 #icon-location {
   grid-column: 1/2;
   grid-row: 2/3;
   margin: 15px 0 0 0;
 }
-
 #location-paragraph {
-  margin: 10px 0 0 0;
   grid-column: 2/3;
   grid-row: 2/3;
+  margin: 10px 0 0 0;
   text-align: justify;
 }
-
 #phone-icon {
   align-self: center;
   grid-column: 1/2;
   grid-row: 3/4;
   margin: 0;
 }
-
 #phone-paragraph {
   align-self: center;
   grid-column: 2/3;
   grid-row: 3/4;
   margin: 0;
 }
-
 #email-icon {
   align-self: center;
   grid-column: 1/2;
   grid-row: 4/5;
   margin: 0;
 }
-
 #email-paragraph {
   align-self: center;
   grid-column: 2/3;
   grid-row: 4/5;
   margin: 0;
 }
-
 @media (max-width: 375px) {
   .information-area {
     font-size: 15px;
@@ -447,106 +396,86 @@ main {
     margin-left: 5%;
     width: 90%;
   }
-
   #location-paragraph {
     text-align: left;
   }
 }
-
 .menu-area {
   display: flex;
   flex-direction: column;
   font-size: 14px;
   margin: -161px 0 0 590px;
 }
-
 .menu-area p {
   margin: 10px 0;
 }
-
 .menu-area a {
   color: white;
   text-decoration: none;
 }
-
 .menu-area a:hover {
   text-decoration: underline;
 }
-
 @media (max-width: 375px) {
   .menu-area {
     margin: 30px 0 0 5%;
   }
-
   .menu-area p {
     margin: 6px 0;
   }
 }
-
 .contact-area {
   display: flex;
   flex-direction: column;
   font-size: 14px;
   margin: -124px 0 0 750px;
 }
-
 .contact-area p {
   margin: 10px 0;
 }
-
 .contact-area a:hover {
   text-decoration: underline;
 }
-
 .contact-area a {
   color: white;
   text-decoration: none;
 }
-
 @media (max-width: 375px) {
   .contact-area {
     margin: 0 0 0 5%;
   }
-
   .contact-area p {
     margin: 6px 0;
   }
 }
-
 .social-media-icons-area {
   display: flex;
   flex-direction: row;
   margin: -112px 0 0 970px;
 }
-
 .social-media-icons-area i {
-  border: 1px solid white;
   border-radius: 50px;
+  border: 1px solid white;
   margin: 0 20px 0 0;
   padding: 10px;
 }
-
 .social-media-icons-area i:hover {
   border: 1px solid var(--Pink);
   color: var(--Pink);
   cursor: pointer;
 }
-
 #facebook-icon {
   padding: 10px 13px;
 }
-
 @media (max-width: 375px) {
   .social-media-icons-area {
     margin: 50px 0 0 28%;
   }
 }
-
 .copy-right-paragraph {
   font-size: 14px;
   margin: 90px 0 0 970px;
 }
-
 @media (max-width: 375px) {
   .copy-right-paragraph {
     font-size: 11px;

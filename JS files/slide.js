@@ -1,26 +1,20 @@
-const next = document.querySelector('.next');
-const prev = document.querySelector('.prev');
-const slides = document.querySelectorAll('.slide');
-let index=0;
-function display (index) {
-    slides.forEach((slide)=>{
-        slide.style.display='none';
-    });
-    slides[index].style.display='flex';
-}
-function nextSlide(){
-    index++;
-    if(index > slides.length-1){
-        index=0;
-    }
-    display(index);
-}
-function prevSlide () {
-	index--;
-	if (index < 0) {
-		index = slides.length - 1;
-	}
-	display(index);
-}
-next.addEventListener('click',nextSlide);
-prev.addEventListener('click',prevslide);
+const sliderButtonPrev = document.querySelector(".slider-item-prev");
+const sliderButtonNext = document.querySelector(".slider-item-next");
+const textOne = document.querySelector(".text-one");
+const textTwo = document.querySelector(".text-two");
+const photoOne = document.querySelector(".photo-one");
+const photoTwo = document.querySelector(".photo-two");
+
+sliderButtonPrev.addEventListener("click", function () {
+    textOne.classList.toggle("slide-left");
+    textTwo.classList.toggle("slide-right");
+    photoOne.classList.toggle("slide-left");
+    photoTwo.classList.toggle("slide-right");
+});
+
+sliderButtonNext.addEventListener("click", function () {
+    textOne.classList.toggle("slide-left");
+    textTwo.classList.toggle("slide-right");
+    photoOne.classList.toggle("slide-left");
+    photoTwo.classList.toggle("slide-right");
+});

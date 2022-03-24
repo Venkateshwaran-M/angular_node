@@ -1,193 +1,171 @@
 :root {
-  --red: hsl(0, 100%, 74%);
-  --green: hsl(154, 59%, 51%);
-  --green-border: hsl(154, 49%, 45%);
   --blue: hsl(248, 32%, 49%);
   --dark-blue: hsl(249, 10%, 26%);
-  --grayish-blue: hsl(246, 25%, 77%);
-  --shadow-red: hsl(0, 56%, 61%);
   --gray-border: rgb(224, 214, 214);
+  --grayish-blue: hsl(246, 25%, 77%);
+  --green-border: hsl(154, 49%, 45%);
+  --green: hsl(154, 59%, 51%);
+  --red: hsl(0, 100%, 74%);
+  --shadow-red: hsl(0, 56%, 61%);
 }
-
 body {
-  font-family: "Poppins", sans-serif;
-  background: url("../images/bg-intro-mobile.png") no-repeat;
-  background-size: cover;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  overflow-x: hidden;
-}
-
-.page-container {
-  box-sizing: border-box;
-  min-width: 350px;
-  max-width: 1440px;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 0, 0, 0.5);
+  background-size: cover;
+  background: url("../images/bg-intro-mobile.png") no-repeat;
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  text-align: center;
 }
-
+.page-container {
+  background: rgba(255, 0, 0, 0.5);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1440px;
+  min-width: 350px;
+  padding: 0 1rem;
+  width: 100%;
+}
 .header {
   color: white;
 }
-
 h1 {
-  white-space: pre-line;
-  font-weight: 600;
   font-size: 1.5rem;
+  font-weight: 600;
   line-height: 2.1rem;
   margin-top: 5rem;
+  white-space: pre-line;
 }
-
 p {
-  margin: 0;
-  margin-bottom: 4rem;
-  padding: 0;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5rem;
-  font-size: 0.9rem;
-}
-
-.btn-action {
-  box-sizing: border-box;
-  width: 100%;
+  margin-bottom: 4rem;
   margin: 0;
-  background: var(--blue);
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  box-shadow: 0px 7px 2px 0px var(--shadow-red);
-  cursor: pointer;
+  padding: 0;
 }
-
+.btn-action {
+  background: var(--blue);
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0px 7px 2px 0px var(--shadow-red);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+}
 .btn-action span {
   font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
   margin: 0;
   padding: 0 3rem;
-  font-weight: 400;
-  font-size: 0.9rem;
 }
-
 form {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   background: white;
-  margin: 2rem 0;
   border-radius: 0.5rem;
   box-shadow: 0px 7px 2px 0px var(--shadow-red);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2rem 0;
 }
-
 input:first-of-type {
   margin-top: 1.5rem;
 }
-
 input {
+  border-radius: 0.2rem;
+  border: 1px solid var(--gray-border);
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  width: 85%;
   height: 3rem;
   margin-top: 1rem;
   padding-left: 1rem;
-  border: 1px solid var(--gray-border);
-  border-radius: 0.2rem;
+  width: 85%;
 }
-
 input:focus {
   border: 1px solid black;
 }
-
 .btn-submit {
-  font-size: 1rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 500;
-  box-sizing: border-box;
-  width: 85%;
   background: var(--green);
   border: none;
   box-shadow: 0px 1px 1px 3px var(--green-border);
+  box-sizing: border-box;
   color: white;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  width: 85%;
 }
-
 form p {
-  font-size: 0.7rem;
-  padding: 1rem 3rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
   color: var(--grayish-blue);
+  font-size: 0.7rem;
+  font-weight: 600;
   line-height: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem 3rem;
 }
-
 form a {
   color: var(--red);
   font-weight: 700;
 }
-
 .error {
-  background: url("../images/icon-error.svg") no-repeat;
   background-position: 95% center;
   background-size: 1.5rem 1.5rem;
+  background: url("../images/icon-error.svg") no-repeat;
 }
-
 .form-error {
-  display: none;
-  margin-top: 0.3rem;
   box-sizing: border-box;
-  width: 85%;
-  text-align: end;
   color: var(--red);
+  display: none;
   font-size: 0.7rem;
   font-weight: 500;
+  margin-top: 0.3rem;
+  text-align: end;
+  width: 85%;
 }
-
 @media screen and (min-width: 720px) {
   body {
+    background-clip: border-box;
     background-repeat: repeat;
     background-size: auto 50rem;
-    background-clip: border-box;
     overflow: hidden;
   }
-
   .page-container {
+    align-items: center;
     flex-direction: row;
     height: 100vh;
-    align-items: center;
     justify-content: center;
   }
-
   .header {
-    width: 49%;
     max-width: 30rem;
-    text-align: left;
     padding-right: 1rem;
-  }
-
-  .forms-container {
+    text-align: left;
     width: 49%;
-    max-width: 35rem;
-    align-items: flex-start;
   }
-
+  .forms-container {
+    align-items: flex-start;
+    max-width: 35rem;
+    width: 49%;
+  }
   form {
     padding: 1rem 0;
   }
-
   h1 {
-    font-weight: 700;
     font-size: 3rem;
+    font-weight: 700;
     line-height: 3.5rem;
   }
 }

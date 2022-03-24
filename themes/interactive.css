@@ -1,143 +1,140 @@
 :root {
-  --full-slider: hsl(174, 77%, 80%);
-  --slider-bg: hsl(174, 86%, 45%);
-  --empty-slider: hsl(224, 65%, 95%);
+  --cta-text: hsl(226, 100%, 87%);
   --discount-bg: hsl(14, 92%, 95%);
   --discount-text: hsl(15, 100%, 70%);
-  --cta-text: hsl(226, 100%, 87%);
-
-  --pricing-bg: hsl(0, 0%, 100%);
-  --main-bg: hsl(230, 100%, 99%);
-  --toggle-button-bg: hsl(223, 50%, 87%);
-  --text: hsl(225, 20%, 60%);
+  --empty-slider: hsl(224, 65%, 95%);
+  --full-slider: hsl(174, 77%, 80%);
   --header-text: hsl(227, 35%, 25%);
+  --main-bg: hsl(230, 100%, 99%);
+  --pricing-bg: hsl(0, 0%, 100%);
+  --slider-bg: hsl(174, 86%, 45%);
+  --text: hsl(225, 20%, 60%);
+  --toggle-button-bg: hsl(223, 50%, 87%);
 }
 body {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  background-color: var(--main-bg);
   background-image: url(./images/bg-pattern.svg);
   background-repeat: no-repeat;
-  background-color: var(--main-bg);
-  font-family: "Manrope", sans-serif;
   color: var(--text);
+  display: flex;
+  flex-direction: column;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 75px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 .header {
+  align-items: center;
   background-image: url(./images/pattern-circles.svg);
+  background-position: 50% 65%;
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: 50% 65%;
-  height: 270px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 270px;
   justify-content: center;
 }
 .header h1 {
-  margin-top: 50px;
-  margin-bottom: 0;
   color: var(--header-text);
   font-size: 25px;
   font-weight: 800;
+  margin-bottom: 0;
+  margin-top: 50px;
 }
 .header p {
-  margin-top: 10px;
-  padding-top: 0px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.7em;
+  margin-top: 10px;
+  padding-top: 0px;
 }
-
 .container {
-  min-width: 375px;
   background-color: var(--pricing-bg);
   border-radius: 10px;
   box-shadow: 0px 15px 15px 0px var(--empty-slider);
+  min-width: 375px;
 }
-
 .pageviews {
-  padding-top: 45px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   font-size: 14px;
   font-weight: 800;
+  letter-spacing: 2px;
+  padding-top: 45px;
+  text-transform: uppercase;
 }
 .slider-container {
   margin: 45px auto;
 }
 .slider {
   -webkit-appearance: none;
-  width: 85%;
-  height: 10px;
-  border-radius: 5px;
   background: var(--empty-slider);
+  border-radius: 5px;
+  height: 10px;
   outline: none;
+  width: 85%;
 }
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 47px;
-  height: 47px;
+  background-color: var(--slider-bg);
+  background-position: 50%, 50%;
+  background-repeat: no-repeat;
+  background: url(./images/icon-slider.svg);
   border-radius: 50%;
   border: none;
-  background: url(./images/icon-slider.svg);
-  background-color: var(--slider-bg);
-  background-repeat: no-repeat;
-  background-position: 50%, 50%;
-  cursor: pointer;
   box-shadow: 0 15px 15px 2px var(--full-slider);
+  cursor: pointer;
+  height: 47px;
   transition: 0.4s;
+  width: 47px;
 }
 .slider::-webkit-slider-thumb:hover {
   background-color: var(--full-slider);
 }
 .slider::-moz-range-thumb {
-  width: 47px;
-  height: 47px;
+  background-color: var(--slider-bg);
+  background-position: 50%, 50%;
+  background-repeat: no-repeat;
+  background: url(./images/icon-slider.svg);
   border-radius: 50%;
   border: none;
-  background: url(./images/icon-slider.svg);
-  background-color: var(--slider-bg);
-  background-repeat: no-repeat;
-  background-position: 50%, 50%;
-  cursor: pointer;
   box-shadow: 0 20px 20px 8px var(--full-slider);
+  cursor: pointer;
+  height: 47px;
   transition: 0.4s;
+  width: 47px;
 }
 .slider::-moz-range-thumb:hover {
   opacity: 0.8;
   transition: 0.4s;
 }
 .slider::-moz-range-progress {
-  height: 10px;
-  border-radius: 5px;
   background: var(--full-slider);
+  border-radius: 5px;
+  height: 10px;
 }
 .price-container {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 .price {
-  font-weight: 800;
-  font-size: 36px;
   color: var(--header-text);
+  font-size: 36px;
+  font-weight: 800;
 }
 .price-month {
   font-size: 16px;
 }
 .switch-container {
-  margin: 40px auto;
-  font-size: 14px;
   display: grid;
-  grid-template-columns: 40% 20% 40%;
+  font-size: 14px;
   grid-template-areas: "left center right";
+  grid-template-columns: 40% 20% 40%;
+  margin: 40px auto;
 }
 .grid-left {
   grid-area: left;
@@ -151,128 +148,117 @@ body {
   text-align: left;
 }
 .discount {
-  color: var(--discount-text);
   background-color: var(--discount-bg);
   border-radius: 20px;
-  padding: 3px 6px;
-  margin-left: 4px;
+  color: var(--discount-text);
   display: inline-block;
   font-size: 11px;
   font-weight: 800;
+  margin-left: 4px;
+  padding: 3px 6px;
 }
-
 /* The switch - the box around the toggle */
 .switch {
-  position: relative;
   display: inline-block;
-  width: 48px;
   height: 24px;
+  position: relative;
+  width: 48px;
 }
 /* Hide default HTML checkbox */
 .switch input {
+  height: 0;
   opacity: 0;
   width: 0;
-  height: 0;
 }
 /* toggle */
 .toggle {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--toggle-button-bg);
   -webkit-transition: 0.4s;
+  background-color: var(--toggle-button-bg);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
   transition: 0.4s;
 }
-
 .toggle:before {
-  position: absolute;
+  -webkit-transition: 0.4s;
+  background-color: var(--main-bg);
+  bottom: 4px;
   content: "";
   height: 16px;
-  width: 16px;
   left: 4px;
-  bottom: 4px;
-  background-color: var(--main-bg);
-  -webkit-transition: 0.4s;
+  position: absolute;
   transition: 0.4s;
+  width: 16px;
 }
-
 input:checked + .toggle {
   background-color: var(--slider-bg);
   transition: 0.4s;
 }
-
 input:hover + .toggle {
   background-color: var(--full-slider);
   transition: 0.4s;
 }
-
 input:checked + .toggle:before {
-  -webkit-transform: translateX(24px);
   -ms-transform: translateX(24px);
+  -webkit-transform: translateX(24px);
   transform: translateX(24px);
 }
-
 /* Rounded toggle */
 .toggle.round {
   border-radius: 19px;
 }
-
 .toggle.round:before {
   border-radius: 50%;
 }
-
 hr {
-  height: 1px;
-  color: var(--empty-slider);
   background-color: var(--empty-slider);
   border: none;
+  color: var(--empty-slider);
+  height: 1px;
 }
-
 .ticks {
-  margin: 25px auto 35px auto;
   font-size: 14px;
+  margin: 25px auto 35px auto;
 }
 .ticks p::before {
-  content: "";
-  display: inline-block;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border: none;
-  background: url(./images/icon-check.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 10px;
+  background: url(./images/icon-check.svg);
+  border: none;
+  content: "";
+  display: inline-block;
   height: 10px;
+  margin-bottom: 0;
   margin-right: 15px;
+  padding-bottom: 0;
+  width: 10px;
 }
 button {
-  border: none;
-  cursor: pointer;
-  border-radius: 50px;
-  font-family: "Manrope", sans-serif;
-  font-weight: 800;
-  font-size: 14px;
   background-color: var(--header-text);
+  border-radius: 50px;
+  border: none;
   color: var(--cta-text);
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
   margin-bottom: 38px;
   padding: 15px 55px;
 }
 button:hover {
   color: var(--pricing-bg);
 }
-
 .attribution {
-  margin: 75px auto 10px auto;
-  font-size: 11px;
   bottom: 5px;
+  font-size: 11px;
+  margin: 75px auto 10px auto;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
 @media (max-width: 700px) {
   .header p {
     max-width: 22ch;
@@ -288,17 +274,16 @@ button:hover {
   .discount-small {
     display: none;
   }
-
   .ticks-container {
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
   }
   .ticks {
-    width: 300px;
-    text-align: left;
     margin: 25px auto 25px 50px;
+    text-align: left;
+    width: 300px;
   }
   button {
     margin: 0;
@@ -310,6 +295,7 @@ button:hover {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 80px 100px;
+
     grid-template-areas:
       "a b"
       "c c";
@@ -318,8 +304,8 @@ button:hover {
     grid-area: a;
   }
   .price-container {
-    padding-top: 24px;
     grid-area: b;
+    padding-top: 24px;
   }
   .slider-container {
     grid-area: c;

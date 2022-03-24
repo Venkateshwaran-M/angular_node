@@ -1,68 +1,59 @@
 body {
   background-color: hsl(210, 46%, 95%);
-  background-image: url(https://previews.123rf.com/images/sdecoret/sdecoret1610/sdecoret161000629/63999852-hand-drawn-project-presentation-on-blue-background.jpg);
-  font-size: medium;
+  background-image: url(https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif);
+  background-position: center;
   background-repeat: no-repeat;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  margin-top: 20px;
+  text-align: center;
 }
-
 li {
   color: black;
 }
-
 header {
   align-items: center;
 }
-
 nav {
   text-align: center;
 }
-
 li {
   color: gold;
-  text-transform: none;
   display: inline;
   padding-left: 20px;
+  text-transform: none;
 }
-
 a {
   color: white;
-  text-decoration: none;
   font-weight: 700;
+  text-decoration: none;
 }
-
 a:hover {
   color: cyan;
 }
-
 header {
   color: white;
 }
-
 p {
   color: white;
 }
-
 button {
   background-color: purple;
-  border: 2px solid gold;
   border-radius: 25px;
+  border: 2px solid gold;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
+  cursor: pointer;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
 }
-
 button:hover {
   background-color: brown;
 }
-
 button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
@@ -71,17 +62,17 @@ button:active {
 @media (max-width: 500px) {
   .button {
     align-items: center;
+    margin: 30px 20px 30px 60px;
     overflow: auto;
     width: 250px;
-    margin: 30px 20px 30px 60px;
   }
   body {
-    max-width: 812px;
     height: 812px;
+    max-width: 812px;
   }
   .li {
-    text-align: center;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 }

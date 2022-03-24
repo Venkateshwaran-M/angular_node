@@ -13,12 +13,12 @@ let validateForm = () => {
     warningMessageElement.style.color = "green";
     emailInputElement.style.borderColor = "green";
     emailInputElement.value = "";
-} else if (emailInputElement.value === '') {
+  } else if (emailInputElement.value === '') {
     warningMessageElement.style.display = "block";
     warningMessageElement.textContent = "Please enter your email!";
     warningMessageElement.style.color = "orange";
     emailInputElement.style.borderColor = "orange";
-} else {
+  } else {
     emailInputElement.style.borderColor = "red";
     warningMessageElement.style.display = "block";
     warningMessageElement.textContent = "Please provide a valid email address";

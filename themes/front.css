@@ -1,0 +1,116 @@
+body {
+  background-image: url(https://i.pinimg.com/originals/8b/35/fe/8b35fef55fba1a201c9c7a11d3ec3d64.gif);
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+}
+.main {
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom: 2px solid black;
+  color: white;
+  filter: hue-rotate(270deg);
+}
+p {
+  padding-bottom: 20px;
+}
+h4::first-letter {
+  font-size: 200%;
+}
+input {
+  border: 3px solid darkgreen;
+  height: 25px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+button {
+  background-color: purple;
+  border: 2px solid gold;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+}
+button:hover {
+  background-color: brown;
+}
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+a:hover {
+  color: chocolate;
+}
+a {
+  color: brown;
+  text-decoration: none;
+}
+.h4 {
+  color: white;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.code-info {
+  color: red;
+  text-align: right;
+  text-decoration: solid;
+}
+.grid-items {
+  border-radius: 10px;
+  box-shadow: 1px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  margin: 20px 20px 20px 20px;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: 5px 10px hsla(225, 32%, 27%, 0.7);
+  font-size: 15px;
+  justify-content: space-between;
+  margin-top: 15%;
+  padding: 20px;
+  text-align: center;
+  text-transform: none;
+}
+.grid-item:hover {
+  background-image: url(https://www.lambdatest.com/blog/wp-content/uploads/2018/11/JPG-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: grab;
+}
+.JS:hover {
+  background-image: url(../images/html.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 1115px) {
+  .grid-items {
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 524px) {
+  .grid-items {
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .grid-items {
+    background-repeat: no-repeat;
+    grid-template-columns: 1fr;
+  }
+}
