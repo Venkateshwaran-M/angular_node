@@ -1,0 +1,170 @@
+<div class="container">
+    <h1>RT-PCR REGISTRATION FORM</h1>
+    <hr>
+    <form class="myform" [formGroup]="fg" (ngSubmit)="onSubmit()">
+        <div class="field">
+            <label for="fname">First Name :</label>
+            <input type="text" name="fname" id="fname" formControlName="fname" placeholder="Enter your Name here">
+        </div>
+        <div class="check">
+            <span *ngIf="fg.controls['fname'].invalid && fg.controls['fname'].touched">*Name is required</span>
+        </div>
+        <div class="field">
+            <label for="aadhar">Aadhar Number :</label>
+            <input type="number" name="aadhar" id="aadhar" formControlName="aadhar" placeholder="Aadhar Number">
+        </div>
+        <div class="check">
+            <span *ngIf="fg.controls['aadhar'].invalid && fg.controls['aadhar'].touched">*Aadhar is required</span>
+        </div>
+        <div class="field">
+            <label for="date-of-birth">Date Of Birth :</label>
+            <input type="date" name="dob" id="dob" formControlName="dob" placeholder="D.O.B">
+        </div>
+        <div class="check">
+            <span *ngIf="fg.controls['dob'].invalid && fg.controls['dob'].touched">*Dob is required</span>
+        </div>
+        <div class="field" id="check-gen">
+            <label for="gender">Gender :</label>
+            <input type="text" name="gender" id="gender" formControlName="gender" placeholder="Gender">
+        </div>
+        <div class="check">
+            <span *ngIf="fg.controls['gender'].invalid && fg.controls['gender'].touched">*Gender is required</span>
+        </div>
+        <div class="field">
+            <label for="city">City :</label>
+            <input type="text" name="city" id="city" formControlName="city" placeholder="City">
+        </div>
+        <div class="check">
+            <span *ngIf="fg.controls['city'].invalid && fg.controls['city'].touched">*City is required</span>
+        </div>
+        <div class="field">
+            <label for="date-of-test">Date Of Test :</label>
+            <input type="date" name="date" id="date" formControlName="date">
+        </div>
+        <div class="field">
+            <label for="time-of-test">Time Of Test :</label>
+            <input type="time" name="time" id="time" formControlName="time">
+        </div>
+        <div class="field">
+            <label for="lab">Lab Name :</label>
+            <input type="text" name="lab" id="lab" formControlName="lab" placeholder="Lab Name">
+        </div>
+        <div class="check">
+            <span *ngIf="fg.controls['lab'].invalid && fg.controls['lab'].touched">*Lab Name is required</span>
+        </div>
+        <div class="field">
+            <label for="report">Report Number :</label>
+            <input type="text" name="report" id="report" formControlName="report" placeholder="Report Number">
+        </div>
+        <div class="check">
+            <span *ngIf="fg.controls['report'].invalid && fg.controls['report'].touched">*Report Number is
+                required</span>
+        </div>
+        <div class="field">
+            <label for="result">Result :</label>
+            <input type="text" name="result" id="result" formControlName="result" placeholder="Result">
+        </div>
+        <div class="check">
+            <span *ngIf="fg.controls['result'].invalid && fg.controls['result'].touched">*Result is required</span>
+        </div>
+        <div class="buttons">
+            <button id="btn" (click)="add()" [disabled]="!fg.valid">Register</button>
+        </div>
+    </form>
+</div>
+<div class="search">
+    <input type="text" id="find" (keyup)="removefield()" placeholder="Enter name to search">
+    <input type="submit" (click)="search()" id="submit">
+    <div id="msg"></div>
+</div>
+<div>
+    <h2>REGISTRATION DATABASE</h2>
+</div>
+<div class="tab">
+    <table id="table">
+        <tr>
+            <th *ngFor="let column of headers">
+                {{column}}
+            </th>
+        </tr>
+        <tr *ngFor="let value of store">
+            <td>
+                {{ value.fname }}
+            </td>
+            <td>
+                {{ value.aadhar }}
+            </td>
+            <td>
+                {{ value.dob }}
+            </td>
+            <td>
+                {{ value.gender }}
+            </td>
+            <td>
+                {{ value.city }}
+            </td>
+            <td>
+                {{ value.date }}
+            </td>
+            <td>
+                {{ value.time }}
+            </td>
+            <td>
+                {{ value.lab }}
+            </td>
+            <td>
+                {{ value.report }}
+            </td>
+            <td>
+                {{ value.result }}
+            </td>
+            <td>
+                {{ value.aadhar }}
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="tab">
+    <table id="table1">
+        <tr>
+            <th *ngFor="let column of headers">
+                {{column}}
+            </th>
+        </tr>
+        <tr *ngFor="let value of searchvalue" id="tr">
+            <td>
+                {{ value.fname }}
+            </td>
+            <td>
+                {{ value.lname }}
+            </td>
+            <td>
+                {{ value.dob }}
+            </td>
+            <td>
+                {{ value.gender }}
+            </td>
+            <td>
+                {{ value.city }}
+            </td>
+            <td>
+                {{ value.date }}
+            </td>
+            <td>
+                {{ value.time }}
+            </td>
+            <td>
+                {{ value.lab }}
+            </td>
+            <td>
+                {{ value.report }}
+            </td>
+            <td>
+                {{ value.result }}
+            </td>
+            <td>
+                {{ value.aadhar }}
+            </td>
+        </tr>
+    </table>
+</div>
