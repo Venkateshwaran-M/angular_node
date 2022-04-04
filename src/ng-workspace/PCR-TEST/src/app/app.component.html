@@ -3,12 +3,14 @@
     <hr>
     <form class="myform" [formGroup]="fg" (ngSubmit)="onSubmit()">
         <div class="field">
-            <label for="fname">First Name :</label>
+            <label for="fname">Name :</label>
             <input type="text" name="fname" id="fname" formControlName="fname" placeholder="Enter your Name here">
         </div>
         <div class="check">
             <span *ngIf="fg.controls['fname'].invalid && fg.controls['fname'].touched">*Name is required</span>
         </div>
+        <br>
+
         <div class="field">
             <label for="aadhar">Aadhar Number :</label>
             <input type="number" name="aadhar" id="aadhar" formControlName="aadhar" placeholder="Aadhar Number">
@@ -16,6 +18,8 @@
         <div class="check">
             <span *ngIf="fg.controls['aadhar'].invalid && fg.controls['aadhar'].touched">*Aadhar is required</span>
         </div>
+        <br>
+
         <div class="field">
             <label for="date-of-birth">Date Of Birth :</label>
             <input type="date" name="dob" id="dob" formControlName="dob" placeholder="D.O.B">
@@ -23,6 +27,8 @@
         <div class="check">
             <span *ngIf="fg.controls['dob'].invalid && fg.controls['dob'].touched">*Dob is required</span>
         </div>
+        <br>
+
         <div class="field" id="check-gen">
             <label for="gender">Gender :</label>
             <input type="text" name="gender" id="gender" formControlName="gender" placeholder="Gender">
@@ -30,6 +36,8 @@
         <div class="check">
             <span *ngIf="fg.controls['gender'].invalid && fg.controls['gender'].touched">*Gender is required</span>
         </div>
+        <br>
+
         <div class="field">
             <label for="city">City :</label>
             <input type="text" name="city" id="city" formControlName="city" placeholder="City">
@@ -37,6 +45,8 @@
         <div class="check">
             <span *ngIf="fg.controls['city'].invalid && fg.controls['city'].touched">*City is required</span>
         </div>
+        <br>
+
         <div class="field">
             <label for="date-of-test">Date Of Test :</label>
             <input type="date" name="date" id="date" formControlName="date">
@@ -45,6 +55,8 @@
             <label for="time-of-test">Time Of Test :</label>
             <input type="time" name="time" id="time" formControlName="time">
         </div>
+        <br>
+
         <div class="field">
             <label for="lab">Lab Name :</label>
             <input type="text" name="lab" id="lab" formControlName="lab" placeholder="Lab Name">
@@ -52,6 +64,8 @@
         <div class="check">
             <span *ngIf="fg.controls['lab'].invalid && fg.controls['lab'].touched">*Lab Name is required</span>
         </div>
+        <br>
+
         <div class="field">
             <label for="report">Report Number :</label>
             <input type="text" name="report" id="report" formControlName="report" placeholder="Report Number">
@@ -60,6 +74,8 @@
             <span *ngIf="fg.controls['report'].invalid && fg.controls['report'].touched">*Report Number is
                 required</span>
         </div>
+        <br>
+
         <div class="field">
             <label for="result">Result :</label>
             <input type="text" name="result" id="result" formControlName="result" placeholder="Result">
@@ -67,6 +83,8 @@
         <div class="check">
             <span *ngIf="fg.controls['result'].invalid && fg.controls['result'].touched">*Result is required</span>
         </div>
+        <br>
+
         <div class="buttons">
             <button id="btn" (click)="add()" [disabled]="!fg.valid">Register</button>
         </div>
@@ -118,9 +136,7 @@
             <td>
                 {{ value.result }}
             </td>
-            <td>
-                {{ value.aadhar }}
-            </td>
+
         </tr>
     </table>
 </div>
@@ -136,7 +152,7 @@
                 {{ value.fname }}
             </td>
             <td>
-                {{ value.lname }}
+                {{ value.aadhar }}
             </td>
             <td>
                 {{ value.dob }}
@@ -162,9 +178,6 @@
             <td>
                 {{ value.result }}
             </td>
-            <td>
-                {{ value.aadhar }}
-            </td>
-        </tr>
+
     </table>
 </div>

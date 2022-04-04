@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Nunito+Sans:wght@300&family=Open+Sans&family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&family=Raleway&display=swap");
+
+body {
+  background-color: hsl(29, 89%, 48%);
+  color: white;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 400;
+}
+
+#find {
+  width: 300px;
+  height: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin-left: 10px;
+}
+
+.tab-container {
+  text-align: left;
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid rgb(245, 238, 238);
+  border-radius: 7px;
+  margin-top: 3rem;
+  background-color: rgb(62, 13, 240);
+}
+
+.tab-container div {
+  margin: 10px;
+}
+
+table {
+  width: 1250px;
+  border: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 3rem;
+}
+hr {
+  width: 31rem;
+}
+table tr th,
+table tr td {
+  border: 1px solid rgb(250, 246, 246);
+  padding: 12px 7px;
+}
+
+.bar {
+  margin: 20px;
+}
+
+.buttons #btn {
+  margin: 20px;
+  padding: 0.7rem 2rem;
+  background-color: rgb(61, 61, 255);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.5s;
+}
+
+#btn:hover {
+  background-color: transparent;
+  border-style: groove;
+  transform: translateY(5px);
+  color: black;
+}
+
+input {
+  width: 300px;
+  height: 25px;
+}
+
+.tab {
+  margin-left: 0px;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  margin-left: 0px;
+}
+
+.search {
+  text-align: center;
+  height: 2rem;
+  margin-top: 3rem;
+}
+
+#submit {
+  margin: 20px;
+  padding: 0.8rem 1rem 1rem 1rem;
+  background-color: rgb(61, 61, 255);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  width: 100px;
+  height: 40px;
+  transition: all 0.5s;
+}
+
+#submit:hover {
+  background-color: rgb(2, 46, 10);
+  transform: translateY(5px);
+}

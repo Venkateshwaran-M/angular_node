@@ -19,6 +19,8 @@
                 maxlength="100" size="100">
 
             <button type="Submit" id="submit-button">Search</button>
+            <button onclick="myFunction()">Theme</button>
+
         </form>
         <p>This Page consists of Frontend mentor challenges</p>
     </header>
@@ -27,6 +29,9 @@
         <div class="grid-item">
             <a href="challenges/qrcode.html">1.QR Code</a>
             <p class="code-info">HTML CSS</p>
+            <div class="tooltip">Click
+                <span class="tooltiptext">QR code using HTML & CSS </span>
+            </div>
         </div>
         <div class="grid-item">
             <a href="challenges/orderconfirmation.html">2.Order Confirmation</a>
@@ -130,6 +135,12 @@
             <p class="code-info">HTML CSS JS</p>
         </div>
     </div>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
 </body>
 
 </html>

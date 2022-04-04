@@ -1,0 +1,112 @@
+<div class="panel-heading">Customer Form</div>
+<form name="customerForm" #customerFormGroup="ngForm" (submit)="saveCustomer(customerFormGroup)">
+    <div class="form-group" [class.has-error]="firstNameFormControl.invalid && firstNameFormControl.touched">
+        <label for="fName"> First Name: </label>
+        <input placeholder="Enter First Name" class="form-control" name="fName" [ngModel]="customerModel.firstName"
+            required minlength="3" #firstNameFormControl="ngModel" />
+        <div class="help-block" *ngIf="firstNameFormControl.invalid && firstNameFormControl.touched">
+            <span *ngIf="firstNameFormControl.errors?.['required']">
+                First Name is Required
+            </span>
+            <span *ngIf="firstNameFormControl.errors?.['minlength']">
+                First Name must be more than 3 characters
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lName"> Last Name: </label>
+        <input placeholder="Enter Last Name" class="form-control" name="lName" [ngModel]="customerModel.lastName"
+            required minlength="3" #lastNameFormControl="ngModel" />
+        <div class="help-block" *ngIf="lastNameFormControl.invalid && lastNameFormControl.touched">
+            <span *ngIf="lastNameFormControl.errors?.['required']">
+                Last Name is Required
+            </span>
+            <span *ngIf="lastNameFormControl.errors?.['minlength']">
+                Last Name must be more than 3 characters
+            </span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email"> Email: </label>
+        <input placeholder="Enter Email Address " class="form-control" name="email" [ngModel]="customerModel.email"
+            #emailFormControl="ngModel" />
+    </div>
+    <div class="form-group">
+        <label for="aadhar">Aadhar Card No:</label>
+        <input type="number" placeholder="Aadhar card number" class="form-control" name="aadhar"
+            [ngModel]="customerModel.aadhar" required minlength="3" #AadharFormControl="ngModel" />
+        <!-- <div class="help-block" *ngIf="aadharFormControl.invalid && aadharFormControl.touched"> -->
+        <!-- <span *ngIf="aadharFormControl.errors?.['required']"> -->
+        <!-- Aadhar number is required -->
+        <!-- </span> -->
+
+        <!-- </div> -->
+
+    </div>
+    <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" placeholder="Date of birth" class="form-control" name="dob" [ngModel]="customerModel.dob">
+    </div>
+    <div class="form-group">
+        <label for="Report">Report Number</label>
+        <input type="number" placeholder="Report Number" class="form-control" name="Report"
+            [ngModel]="customerModel.Report">
+    </div>
+    <button class="btn" style="background-color:aqua">Submit</button>
+</form>
+<hr>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th scope="col">Bio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Moto</td>
+            <td>strauss</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Moto</td>
+            <td>strauss</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>Moto</td>
+            <td>strauss</td>
+        </tr>
+    </tbody>
+</table>
+<pre class="bg-info card" style="width: 18rem;">
+
+    is pistine   : {{customerFormGroup.pristine}}
+    is dirty     : {{customerFormGroup.invalid}}
+
+    is valid     : {{customerFormGroup.valid}}
+    is invalid   : {{customerFormGroup.invalid}}
+
+    is untouched : {{customerFormGroup.untouched}}
+    is touched   : {{customerFormGroup.touched}}
+</pre>
+<pre class="bg-warning card" style="width: 18rem;">
+    is pistine   : {{firstNameFormControl.pristine}}
+    is dirty     : {{firstNameFormControl.invalid}}
+
+    is valid     : {{firstNameFormControl.valid}}
+    is invalid   : {{firstNameFormControl.invalid}}
+
+    is untouched : {{firstNameFormControl.untouched}}
+    is touched   : {{firstNameFormControl.touched}}
+</pre>

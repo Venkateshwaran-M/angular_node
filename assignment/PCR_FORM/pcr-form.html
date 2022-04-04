@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTPCR - Form</title>
+    <link rel="stylesheet" href="./themes/pcr.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="tab tab-container">
+            <h1>RT-PCR REGISTRATION FORM</h1>
+            <hr>
+            <div class="field">
+                <label for="fname">First Name :</label>
+                <input type="text" name="fname" id="fname">
+            </div>
+            <div class="field">
+                <label for="lname">Last Name :</label>
+                <input type="text" name="lname" id="lname">
+            </div>
+            <div class="field">
+                <label for="date-of-birth">Date Of Birth :</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div class="field" id="check-gen">
+                <label for="gender">Gender :</label>
+                <input type="text" name="gender" id="gender">
+
+            </div>
+            <div class="field">
+                <label for="city">City :</label>
+                <input type="text" name="city" id="city">
+            </div>
+            <div class="field">
+                <label for="date-of-test">Date Of Test :</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="field">
+                <label for="time-of-test">Time Of Test :</label>
+                <input type="time" name="time" id="time">
+            </div>
+            <div class="field">
+                <label for="lab">Lab Name :</label>
+                <input type="text" name="lab" id="lab">
+            </div>
+            <div class="field">
+                <label for="report">Report Number :</label>
+                <input type="text" name="report" id="report">
+            </div>
+            <div class="field">
+                <label for="result">Result :</label>
+                <input type="text" name="result" id="result">
+            </div>
+            <div class="field">
+                <label for="aadhar">Aadhar Numbar :</label>
+                <input type="number" name="aadhar" id="aadhar">
+            </div>
+
+            <div class="buttons">
+                <button id="btn"> Submit Form </button>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" id="find" placeholder="Enter name to search">
+            <input type="submit" id="submit">
+            <div id="msg"></div>
+        </div>
+        <div class="tab tab-1">
+            <table id="table" style="border: 1;">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Date Of Birth</th>
+                    <th>Gender</th>
+                    <th>City</th>
+                    <th>Date Of Test</th>
+                    <th>time of test</th>
+                    <th>Lab Name</th>
+                    <th>Report Number</th>
+                    <th>Result</th>
+                    <th>Aadhar Number</th>
+                </tr>
+            </table>
+        </div>
+        <div class="tab tab-1 " id="tab-3">
+            <table id="table1" style="border: 1;">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Date Of Birth</th>
+                    <th>Gender</th>
+                    <th>City</th>
+                    <th>Date Of Test</th>
+                    <th>time of test</th>
+                    <th>Lab Name</th>
+                    <th>Report Number</th>
+                    <th>Result</th>
+                    <th>Aadhar Number</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="./scripts/elements.js" type="module"></script>
+</body>
+
+</html>

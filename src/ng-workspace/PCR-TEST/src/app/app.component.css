@@ -1,1 +1,134 @@
-@import url(../node_modules/bootstrap/dist/css/bootstrap.css);
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  background-color: orange;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.field {
+  align-self: center;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  padding: 3px;
+  width: 500px;
+}
+
+div input {
+  padding: 20px;
+}
+
+#find {
+  margin-top: 10px;
+}
+
+label {
+  font-weight: 450;
+  font-family: sans-serif;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid gray;
+  height: 20px;
+  width: 250px;
+}
+
+.tab {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+
+.tab-container {
+  border-radius: 10px;
+  padding-top: 10px;
+  width: 700px;
+}
+
+#table,
+#table1 {
+  background-color: transparent;
+  border: 1px solid black;
+  text-align: center;
+  width: 1350px;
+}
+
+#table tr th,
+#table1 tr th {
+  background-color: gray;
+  border: 1px solid black;
+  color: black;
+  margin: 30px;
+}
+
+#table td,
+#table1 td {
+  border: 1px solid black;
+}
+
+.search {
+  margin-bottom: 40px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.search input {
+  border: 1px solid black;
+}
+
+.buttons {
+  margin: 10px;
+}
+
+.buttons button {
+  background-color: blue;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  margin: 20px;
+  outline: none;
+  padding: 5px;
+  width: 100px;
+}
+
+#submit {
+  height: 25px;
+  margin-left: 20px;
+  width: 100px;
+}
+
+#find {
+  height: 20px;
+}
+
+#msg {
+  margin-top: 10px;
+  font-weight: bold;
+  color: red;
+}
+
+button:hover {
+  background-color: gray;
+  border-radius: 5px;
+  color: black;
+  padding: 5px;
+}
+
+#submit:hover {
+  background-color: gray;
+  border: none;
+  color: black;
+  outline: none;
+}

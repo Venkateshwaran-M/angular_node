@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pcr test report</title>
+    <link rel="stylesheet" href="./pcr.css">
+</head>
+
+
+<body>
+    <h1> PCR TEST FORM</h1>
+    <div class="container">
+        <div class="tab tab-1">
+            <table id="table">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>AadharNo</th>
+                    <th>city</th>
+                    <th>DOB</th>
+                    <th>Result</th>
+                    <th>Test time</th>
+                    <th>Lab Name</th>
+                </tr>
+                <!-- <tr>
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td>10</td>
+                    <td>1234567890</td>
+                    <td>cbe</td>
+                    <td>18-04-2001</td>
+                    <td>true</td>
+                    <td>time</td>
+                </tr>
+                <tr>
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>30</td>
+                    <td>1234567890</td>
+                    <td>vnr</td>
+                    <td>22-12-2000</td>
+                    <td>true</td>
+                    <td>time</td>
+
+                </tr>
+                <tr>
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>20</td>
+                    <td>1234567890</td>
+                    <td>slm</td>
+                    <td>31-06-2000</td>
+                    <td>true</td>
+                    <td>time</td>
+
+                </tr> -->
+            </table>
+        </div>
+        <div class="tab tab-2">
+            <label for="fname"> First Name :</label>
+            <input type="text" name="fname" id="fname">
+            <label for=""> Last Name :</label>
+            <input type="text" name="lname" id="lname">
+            <label for=""> Age :</label>
+            <input type="number" name="age" id="age">
+            <label for=""> AadharNo:</label>
+            <input type="number" name="addarNo" id="aadharNo" />
+            <label for=""> city:</label>
+            <input type="text" name="city" id="city" />
+            <label for=""> DOB:</label>
+            <input type="date" name="date" id="date" />
+            <label for=""> Result:</label>
+            <input type="radio" name="result" id="result" />
+            <label for="">Tested Time: </label>
+            <input type="time" name="tot" id="tot" />
+            <label for="labname">Lab Name:</label>
+            <input type="text" name="lab" id="labname">
+            <button onclick="addHtmlTableRow();"> Submit </button>
+            <button onclick="show()">Show Table</button>
+            <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+            <button onclick="removeSelectedRow();">Remove</button>
+        </div>
+    </div>
+    <div class="search">
+        search: <input type="text" id="find" onkeyup="myFunction()">
+    </div>
+    <script src="./pcr.js"></script>
+</body>
+
+</html>
